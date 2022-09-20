@@ -1,0 +1,21 @@
+---
+const links = [
+  { linkText: "About Us", link: "/about" },
+  { linkText: "Scholarships", link: "/scholarships" },
+  { linkText: "Success Stories", link: "/success-stories" },
+  { linkText: "Contact Us", link: "/contact" },
+];
+---
+
+<header>
+  <a href="/">Roxbury Scholarship Foundation</a>
+  <ul>
+    {
+      links.map((link) => (
+        <a href={link.link}>
+          <li>{link.linkText}</li>
+        </a>
+      ))
+    }
+  </ul>
+</header>
