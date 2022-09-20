@@ -9,6 +9,9 @@ module.exports = {
         yeseva: ["YesevaOne", "serif"],
         sans: ["Montserrat", "sans-serif"],
       },
+      colors: {
+        primary: "#4C6C5D",
+      },
     },
   },
   plugins: [],
