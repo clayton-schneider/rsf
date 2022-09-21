@@ -27,6 +27,7 @@ module.exports = {
         primary: "#4C6C5D",
         textColor: "#353535",
         secondary: "#A1B2AA",
+        secondLight: "#E0E4DC",
       },
       lineHeight: {
         paragraph: "180%",

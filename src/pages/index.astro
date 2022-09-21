@@ -5,12 +5,11 @@ import styles from "../styles.css";
 // Import Layout
 import Layout from "../layouts/Layout.astro";
 
-import { ImageSupportDetection } from "astro-imagetools/components";
-
 // Import Sections
 import Hero from "../components/sections/Hero.astro";
-import Impact from "../components/sections/Impact.astro";
-import FeaturedStories from "../components/sections/FeaturedStories.astro";
+// import Impact from "../components/sections/Impact.astro";
+// import FeaturedStories from "../components/sections/FeaturedStories.astro";
+import Donate from "../components/sections/Donate.astro";
 ---
 
 <!DOCTYPE html>
@@ -21,13 +20,13 @@ import FeaturedStories from "../components/sections/FeaturedStories.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Roxbury Scholarship Foundation</title>
-    <ImageSupportDetection />
   </head>
   <Layout>
     <main>
       <Hero />
-      <Impact />
-      <FeaturedStories />
+      <!-- <Impact /> -->
+      <!-- <FeaturedStories /> -->
+      <Donate />
     </main>
   </Layout>
 </html>

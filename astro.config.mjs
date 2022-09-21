@@ -1,14 +1,15 @@
 import { defineConfig } from "astro/config";
-import { astroImageTools } from "astro-imagetools";
-
 import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     tailwind({
-      config: { applyBaseStyles: false },
+      config: {
+        applyBaseStyles: false,
+      },
     }),
-    astroImageTools,
+    image(),
   ],
 });

@@ -35,11 +35,11 @@ const stories = [
   </h2>
 
   <div
-    class="flex justify-center gap-4 flex-col items-center md:flex-row mt-4 flex-wrap"
+    class="md:inline-flex flex justify-center gap-4 flex-col items-center md:flex-row mt-4 flex-wrap"
   >
     {
       stories.map((story, index) => (
-        <div class="max-w-[350px] bg-secondary rounded">
+        <div class="max-w-[350px] bg-secondLight rounded">
           <div class="overflow-hidden rounded-t">
             <BackgroundImage src={story.img} aspect={350 / 250}>
               <div class="bg-cover pt-40 pb-4 px-4">

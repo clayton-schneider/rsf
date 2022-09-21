@@ -1,0 +1,35 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
+<section class="max-w-7xl mx-auto my-20 grid grid-cols-5 items-center">
+  <div
+    class="bg-primary text-white p-5 rounded col-start-3 col-end-6 row-start-1 z-10"
+  >
+    <h2 class="text-4xl font-bold">
+      Looking To Help The Cause? <br /> Make A Donation Today!
+    </h2>
+    <p class="leading-8 mt-5">
+      The Roxbury Scholarship Foundation (RSF) is a tax-exempt organization
+      established in 1971 to serve the citizens of Roxbury by providing
+      financial assistance to selected post-high school scholars in pursuit of
+      their educational goals.
+    </p>
+    <p class="leading-8 mt-5">
+      Scholarships are awarded on the basis of need, character and academic
+      achievement, with need being the primary consideration.
+    </p>
+    <a
+      href="/donate"
+      class="mt-5 inline-block rounded border border-white px-4 py-2">Donate</a
+    >
+  </div>
+
+  <Image
+    class="rounded col-start-2 col-end-5 row-start-1"
+    src="/src/imgs/home/donate.jpg"
+    alt="2017 scholarship awardees"
+    width={540}
+    height={510}
+  />
+</section>
