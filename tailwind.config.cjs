@@ -35,6 +35,8 @@ module.exports = {
       backgroundImage: {
         cover:
           "linear-gradient(to bottom, rgba(49, 49,49, 0), rgba(49, 49,49, .2), rgba(49, 49,49, 1))",
+        coverInv:
+          "linear-gradient(to bottom, rgba(49, 49,49, 0.7), rgba(49, 49,49, .5), rgba(49, 49,49, 0))",
       },
     },
   },
