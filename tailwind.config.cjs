@@ -25,6 +25,15 @@ module.exports = {
     extend: {
       colors: {
         primary: "#4C6C5D",
+        textColor: "#353535",
+        secondary: "#A1B2AA",
+      },
+      lineHeight: {
+        paragraph: "180%",
+      },
+      backgroundImage: {
+        cover:
+          "linear-gradient(to bottom, rgba(49, 49,49, 0), rgba(49, 49,49, .2), rgba(49, 49,49, 1))",
       },
     },
   },
