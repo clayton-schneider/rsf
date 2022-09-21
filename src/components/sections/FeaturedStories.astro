@@ -1,5 +1,5 @@
 ---
-import { BackgroundImage } from "astro-imagetools/components";
+import { Image } from "@astrojs/image/components";
 
 const stories = [
   {
@@ -40,13 +40,19 @@ const stories = [
     {
       stories.map((story, index) => (
         <div class="max-w-[350px] bg-secondLight rounded">
-          <div class="overflow-hidden rounded-t">
-            <BackgroundImage src={story.img} aspect={350 / 250}>
-              <div class="bg-cover pt-40 pb-4 px-4">
-                <p class="text-white font-bold text-3xl">{story.name}</p>
-              </div>
-            </BackgroundImage>
+          <div class="relative">
+            <Image
+              class="absolute w-full rounded-t h-full object-cover"
+              src={story.img}
+              alt={`featured story #${index}`}
+              width={350}
+              height={250}
+            />
+            <div class="bg-cover pt-40 pb-4 px-4 relative z-10">
+              <p class="text-white font-bold text-3xl">{story.name}</p>
+            </div>
           </div>
+
           <div class="p-5">
             <p class="rounded-full px-3 py-1 mt-2 text-white font-bold bg-primary inline-block">
               {story.year}
