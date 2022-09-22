@@ -23,21 +23,9 @@ const onlineOption = {
   steps: [
     "Click the Donate with PayPal Button below",
     "Follow the prompt PayPal provides you with.",
-    "There is an optional message field. If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't specify a memorial scholarship then your contribution will go to our general fund.",
+    "On the confirmation page there will be an optional note field. If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't specify a memorial scholarship then your contribution will go to our general fund.",
   ],
 };
-
-const mailSteps = [
-  "Address your check to Roxbury Scholarship Foundation",
-  "If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't secify a memorial scholarship then your contribution will go to our general fund.",
-  "Mail your check to: \nRoxbury Scholarship Foundation \nP.O. Box 106 \nRoxbury, CT 06783",
-];
-
-const ppSteps = [
-  "Click the Donate with PayPal Button below",
-  "Follow the prompt PayPal provides you with.",
-  "There is an optional message field. If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't specify a memorial scholarship then your contribution will go to our general fund.",
-];
 ---
 
 <!DOCTYPE html>
@@ -55,7 +43,7 @@ const ppSteps = [
         <div
           class="flex items-center md:items-start flex-col md:space-x-4 md:flex-row justify-between"
         >
-          <div class="max-w-2xl">
+          <div class="md:max-w-sm lg:max-w-md xl:max-w-2xl">
             <h1 class="text-7xl font-bold text-primary">Donate</h1>
             <p class="mt-14">
               The Roxbury Scholarship Foundation fills a vital need in our
@@ -98,47 +86,6 @@ const ppSteps = [
               falseOption={onlineOption}
               classes="mt-10"
             />
-            {/* Mail Steps */}
-            <div class="mt-10">
-              <p class="font-bold text-xl">Donate By Mail:</p>
-
-              {/* Insert Steps */}
-              <div class="mt-4 space-y-2">
-                {
-                  mailSteps.map((step, index) => (
-                    <div class="flex">
-                      <p class=" bg-primary text-white font-bold text-sm min-w-[36px] w-9 h-9 rounded-full leading-[36px] text-center">
-                        {index + 1}
-                      </p>
-
-                      {/* prettier-ignore */}
-                      <p class="inline-block ml-2 leading-none whitespace-pre-line  text-xl"><span>{step}</span></p>
-                    </div>
-                  ))
-                }
-              </div>
-            </div>
-
-            {/* PP Steps */}
-            <div class="mt-10">
-              <p class="font-bold text-xl">Donate By Paypal:</p>
-
-              {/* Insert Steps */}
-              <div class="mt-4 space-y-2">
-                {
-                  ppSteps.map((step, index) => (
-                    <div class="flex">
-                      <p class=" bg-primary text-white font-bold text-sm min-w-[36px] w-9 h-9 rounded-full leading-[36px] text-center">
-                        {index + 1}
-                      </p>
-
-                      {/* prettier-ignore */}
-                      <p class="inline-block ml-2 leading-none whitespace-pre-line  text-xl"><span>{step}</span></p>
-                    </div>
-                  ))
-                }
-              </div>
-            </div>
           </div>
         </div>
 
