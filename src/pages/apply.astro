@@ -3,6 +3,7 @@
 import "../styles.css";
 
 import Layout from "../layouts/Layout.astro";
+import Accordion from "../components/accordion/Accordion";
 
 import downIcon from "../imgs/apply/download.svg";
 import upIcon from "../imgs/apply/upload.svg";
@@ -87,6 +88,11 @@ const steps = [
                 );
             })
           }
+        </div>
+
+        <div>
+          <h2>Frequently Asked Questions</h2>
+          <Accordion client:load />
         </div>
       </section>
     </main>
