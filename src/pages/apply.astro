@@ -3,7 +3,9 @@
 import "../styles.css";
 
 import Layout from "../layouts/Layout.astro";
+
 import Accordion from "../components/accordion/Accordion";
+import { faq } from "../data/apply/faqs";
 
 import downIcon from "../imgs/apply/download.svg";
 import upIcon from "../imgs/apply/upload.svg";
@@ -91,8 +93,10 @@ const steps = [
         </div>
 
         <div>
-          <h2>Frequently Asked Questions</h2>
-          <Accordion client:load />
+          <h2 class="mt-20 font-bold text-4xl text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion client:load faqs={faq} />
         </div>
       </section>
     </main>

@@ -1,8 +1,7 @@
-import { everyoneFAQ } from "./faqs";
 import React, { useState } from "react";
 import AccordionItem from "./AccordionItem";
 
-export default function Accordion() {
+export default function Accordion({ faqs }) {
   const [clicked, setClicked] = useState("0");
 
   const handleToggle = (index) => {
@@ -13,7 +12,7 @@ export default function Accordion() {
   };
   return (
     <ul className="my-0 mx-auto">
-      {everyoneFAQ.map((faq, index) => (
+      {faqs.map((faq, index) => (
         <AccordionItem
           key={index}
           faq={faq}

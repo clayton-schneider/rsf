@@ -6,18 +6,14 @@ export default function AccordionItem({ faq, onToggle, active }) {
   const contentEl = useRef();
 
   return (
-    <li
-      className={`accordion__item mt-5 rounded bg-white py-8 px-5 shadow ${
-        active ? "active" : ""
-      }`}
-    >
+    <li className={`mt-5 rounded bg-white py-8 px-5`}>
       <button
-        className={`accordion__btn tranistion-all flex w-full cursor-pointer flex-wrap items-center
+        className={`transition-all flex w-full cursor-pointer flex-wrap items-center
         justify-between text-left text-xl font-bold  duration-300 
         ${
           active
-            ? "text-orange-500 hover:text-gray-600"
-            : "text-gray-600 hover:text-orange-400"
+            ? "text-green-700 hover:text-gray-600"
+            : "text-gray-600 hover:text-green-600"
         }`}
         onClick={onToggle}
       >
