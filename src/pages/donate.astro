@@ -1,0 +1,129 @@
+---
+// import styles MUST DO ON EVERY PAGE
+import "../styles.css";
+
+// Import Layout
+import Layout from "../layouts/Layout.astro";
+
+import Accordion from "../components/accordion/Accordion";
+import { faq } from "../data/donate/faqs";
+
+const mailSteps = [
+  "Address your check to Roxbury Scholarship Foundation",
+  "If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't secify a memorial scholarship then your contribution will go to our general fund.",
+  "Mail your check to: \nRoxbury Scholarship Foundation \nP.O. Box 106 \nRoxbury, CT 06783",
+];
+
+const ppSteps = [
+  "Click the Donate with PayPal Button below",
+  "Follow the prompt PayPal provides you with.",
+  "There is an optional message field. If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't specify a memorial scholarship then your contribution will go to our general fund.",
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Donate | Roxbury Scholarship Foundation</title>
+  </head>
+  <Layout>
+    <main>
+      <section class="max-w-7xl mx-auto py-20 px-[5%] xl:px-0 text-textColor">
+        <div
+          class="flex items-center md:items-start flex-col md:space-x-4 md:flex-row justify-between"
+        >
+          <div class="max-w-2xl">
+            <h1 class="text-7xl font-bold text-primary">Donate</h1>
+            <p class="mt-14">
+              The Roxbury Scholarship Foundation fills a vital need in our
+              community by helping local students attend college. This academic
+              year, the foundation awarded $111,800 in scholarships to 35
+              students. Since the Foundation began in 1971, it has given more
+              than $1.6 million to Roxbury students. The scholarships are based
+              on need, character, and academic achievement, with need being the
+              primary consideration. None of this would have been possible
+              without generous contributions from the Roxbury Community.
+
+              <br />
+              <br />
+              By supporting the Foundation, you are investing in the future of our
+              town’s youth.
+
+              <br />
+              <br />
+              Since scholarships are available to people of all ages, you are also
+              helping some adults resume their educations in order to further their
+              careers.
+
+              <br />
+              <br />
+              Please consider supporting the Foundation with a tax-deductible donation.
+              Contributions may be made to the general scholarship fund, to one of
+              our memorial scholarship funds, or by creating a new memorial scholarship
+              on behalf of someone you wish to honor.
+            </p>
+          </div>
+
+          <div
+            class="border-2 mt-4 md:mt-0 border-secondary flex-1 max-w-lg rounded p-12"
+          >
+            <h3 class="text-center font-bold text-4xl">How To Donate</h3>
+
+            {/* Mail Steps */}
+            <div class="mt-10">
+              <p class="font-bold text-xl">Donate By Mail:</p>
+
+              {/* Insert Steps */}
+              <div class="mt-4 space-y-2">
+                {
+                  mailSteps.map((step, index) => (
+                    <div class="flex">
+                      <p class=" bg-primary text-white font-bold text-sm min-w-[36px] w-9 h-9 rounded-full leading-[36px] text-center">
+                        {index + 1}
+                      </p>
+
+                      {/* prettier-ignore */}
+                      <p class="inline-block ml-2 leading-none whitespace-pre-line  text-xl"><span>{step}</span></p>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+
+            {/* PP Steps */}
+            <div class="mt-10">
+              <p class="font-bold text-xl">Donate By Paypal:</p>
+
+              {/* Insert Steps */}
+              <div class="mt-4 space-y-2">
+                {
+                  ppSteps.map((step, index) => (
+                    <div class="flex">
+                      <p class=" bg-primary text-white font-bold text-sm min-w-[36px] w-9 h-9 rounded-full leading-[36px] text-center">
+                        {index + 1}
+                      </p>
+
+                      {/* prettier-ignore */}
+                      <p class="inline-block ml-2 leading-none whitespace-pre-line  text-xl"><span>{step}</span></p>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20">
+          <h2 class="font-bold text-4xl text-center">
+            Frequently Asked Questions
+          </h2>
+          <Accordion client:visible faqs={faq} />
+        </div>
+      </section>
+    </main>
+  </Layout>
+</html>
