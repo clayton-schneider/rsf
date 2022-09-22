@@ -38,6 +38,9 @@ module.exports = {
         coverInv:
           "linear-gradient(to bottom, rgba(49, 49,49, 0.7), rgba(49, 49,49, .5), rgba(49, 49,49, 0))",
       },
+      screens: {
+        xs: "265px",
+      },
     },
   },
   plugins: [],
