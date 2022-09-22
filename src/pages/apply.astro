@@ -1,0 +1,94 @@
+---
+// import styles MUST DO ON EVERY PAGE
+import "../styles.css";
+
+import Layout from "../layouts/Layout.astro";
+
+import downIcon from "../imgs/apply/download.svg";
+import upIcon from "../imgs/apply/upload.svg";
+import pencilIcon from "../imgs/apply/pencil.svg";
+
+const steps = [
+  {
+    icon: downIcon,
+    title: "Download Application",
+    text: "Our application is updated every year. Download this year's to begin editing",
+    link: "https://google.com",
+  },
+  {
+    icon: pencilIcon,
+    title: "Complete Application",
+    text: "Fill out every section of the application and save frequently. Make sure to gather supplemental material.",
+  },
+  {
+    icon: upIcon,
+    title: "Submit Application",
+    text: `Mail all documents to our address\n or\n scan and email us all documents`,
+    link: "/contact",
+  },
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Apply | Roxbury Scholarship Foundation</title>
+  </head>
+  <Layout>
+    <main>
+      <section class="max-w-7xl mx-auto py-20 px-[5%] xl:px-0 text-textColor">
+        <h1 class="text-7xl font-bold text-primary text-center w-full">
+          How To Apply
+        </h1>
+        <div
+          class="flex xl:justify-between justify-center items-center lg:items-start space-x-0 flex-wrap space-y-10 lg:space-y-0 lg:space-x-10 mt-16"
+        >
+          {
+            steps.map((step, index) => {
+              if (step.link)
+                return (
+                  <a href={step.link} target="_blank">
+                    <div class="max-w-[330px]">
+                      <img class="mx-auto" src={step.icon} alt={step.title} />
+                      <div class="flex items-center mt-9">
+                        <p class="inline-block bg-primary text-white font-bold text-sm w-9 h-9 rounded-full leading-[36px] text-center">
+                          {index + 1}
+                        </p>
+                        <p class="inline-block ml-2 text-2xl font-bold">
+                          {step.title}
+                        </p>
+                      </div>
+                      <p class="whitespace-pre-line text-center mt-3">
+                        {step.text}
+                      </p>
+                    </div>
+                  </a>
+                );
+              else
+                return (
+                  <div class="max-w-[330px]">
+                    <img class="mx-auto" src={step.icon} alt={step.title} />
+                    <div class="flex items-center mt-9">
+                      <p class="inline-block bg-primary text-white font-bold text-sm w-9 h-9 rounded-full leading-[36px] text-center">
+                        {index + 1}
+                      </p>
+                      <p class="inline-block ml-2 text-2xl font-bold">
+                        {step.title}
+                      </p>
+                    </div>
+                    <p class="whitespace-pre-line text-center mt-3">
+                      {step.text}
+                    </p>
+                  </div>
+                );
+            })
+          }
+        </div>
+      </section>
+    </main>
+  </Layout>
+</html>
