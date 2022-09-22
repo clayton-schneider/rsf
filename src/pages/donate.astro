@@ -8,6 +8,25 @@ import Layout from "../layouts/Layout.astro";
 import Accordion from "../components/accordion/Accordion";
 import { faq } from "../data/donate/faqs";
 
+import Switch from "../components/widgets/Switch";
+
+const mailOption = {
+  title: "Mail",
+  steps: [
+    "Address your check to Roxbury Scholarship Foundation",
+    "If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't secify a memorial scholarship then your contribution will go to our general fund.",
+    "Mail your check to: \nRoxbury Scholarship Foundation \nP.O. Box 106 \nRoxbury, CT 06783",
+  ],
+};
+const onlineOption = {
+  title: "PayPal",
+  steps: [
+    "Click the Donate with PayPal Button below",
+    "Follow the prompt PayPal provides you with.",
+    "There is an optional message field. If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't specify a memorial scholarship then your contribution will go to our general fund.",
+  ],
+};
+
 const mailSteps = [
   "Address your check to Roxbury Scholarship Foundation",
   "If you would like your donation to be contributed to a specific memorial scholarship please include a note specifying which memorial scholarship. If you don't secify a memorial scholarship then your contribution will go to our general fund.",
@@ -73,6 +92,12 @@ const ppSteps = [
           >
             <h3 class="text-center font-bold text-4xl">How To Donate</h3>
 
+            <Switch
+              client:load
+              trueOption={mailOption}
+              falseOption={onlineOption}
+              classes="mt-10"
+            />
             {/* Mail Steps */}
             <div class="mt-10">
               <p class="font-bold text-xl">Donate By Mail:</p>
