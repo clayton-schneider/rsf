@@ -3,7 +3,7 @@ import { Image } from "@astrojs/image/components";
 import heroImage from "../../imgs/home/hero-image.jpg";
 ---
 
-<section class="h-[500px] relative px-[2.5%] md:px-0">
+<section class="h-[500px] relative">
   <Image
     class="absolute w-full h-[500px] object-cover z-0"
     src={heroImage}
@@ -11,7 +11,9 @@ import heroImage from "../../imgs/home/hero-image.jpg";
     loading="eager"
   />
   <div class="bg-coverInv relative z-10 h-full">
-    <div class="pt-20 text-center text-white max-w-xl mx-auto">
+    <div
+      class="pt-20 text-center text-white max-w-xl mx-auto px-[2.5%] md:px-0"
+    >
       <h1 class="font-bold text-4xl">
         Helping Local Students Help Themselves... And Others
       </h1>
