@@ -1,10 +1,23 @@
-<section class="relative mt-20">
-  <div class="w-full h-[500px] bg-secondary absolute top-0 left-0"></div>
+---
+import { Image } from "@astrojs/image/components";
+import aboutHero from "../../../data/about/imgs/about-hero.jpg";
+---
 
-  <div class="max-w-7xl relative z-10 mx-auto">
+<section class="relative mt-20">
+  <div class="w-full h-[500px] bg-secondary absolute top-0 left-0">
+    <Image
+      src={aboutHero}
+      alt="award ceremony"
+      class="w-full h-full object-cover object-top pl-16"
+    />
+  </div>
+
+  <div class="max-w-7xl relative z-10 mx-auto px-[5%] xl:px-0">
     <h1 class="text-primary font-bold text-6xl -translate-y-1/2">About</h1>
 
-    <div class="mt-[350px] flex justify-between space-x-16">
+    <div
+      class="mt-[350px] flex-col lg:flex-row flex justify-between lg:space-x-16"
+    >
       <div class="bg-primary text-white max-w-[600px] p-16">
         <h6 class="text-xl font-bold">Purpose</h6>
         <p class="leading-relaxed mt-2">
@@ -15,7 +28,7 @@
         </p>
       </div>
 
-      <div class="mt-[125px]">
+      <div class="mt-4 lg:mt-[125px]">
         <p class="leading-loose">
           The Foundation’s charter specifies that scholarships be awarded on the
           basis of financial need, academic achievement, and character, with
