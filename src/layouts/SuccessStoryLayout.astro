@@ -1,0 +1,70 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  summary: string;
+}>;
+
+const { frontmatter } = Astro.props;
+
+import "../styles.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title} | Roxbury Scholarship Foundation</title>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <section
+        class="max-w-5xl mx-auto px-[5%] xl:px-0 my-20 flex justify-between flex-col lg:items-start lg:flex-row items-center lg:space-y-0 space-y-5 lg:space-x-5"
+      >
+        <div class="max-w-lg shrink text-center lg:text-left">
+          <p class="uppercase tracking-widest">RSF Success Story</p>
+          <h1 class="mt-3 font-bold text-5xl leading-relaxed">
+            {frontmatter.title}
+          </h1>
+          <p>{frontmatter.summary}</p>
+        </div>
+
+        <div class="w-[500px] h-[350px] bg-red-200 rounded shrink-0"></div>
+      </section>
+
+      <section class="max-w-3xl mx-auto px-[5%] xl:px-0 my-20 prose">
+        <slot />
+      </section>
+
+      <section class="my-20 max-w-3xl mx-auto px-[5%] text-textColor xl:px-0">
+        <div
+          class="flex flex-col items-center lg:flex-row justify-between border-2 border-secondary rounded p-6 space-y-5 lg:space-y-0"
+        >
+          <div class="max-w-md text-center lg:text-left">
+            <p class="uppercase tracking-widest text-sm">
+              Help Build More Success Stories
+            </p>
+            <h3 class="font-bold text-4xl mt-2">Donate Today To Help Out</h3>
+            <p class="mt-2">
+              All donations go toward funding success stories just like this one
+            </p>
+          </div>
+          <a
+            href="/donate"
+            class="tracking-widest uppercase bg-primary border-2 border-transparent self-center py-2 px-4 rounded text-white text-sm hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300"
+            >Donate</a
+          >
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

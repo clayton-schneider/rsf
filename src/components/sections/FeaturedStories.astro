@@ -9,7 +9,7 @@ const stories = [
     name: "Marsha Doran",
     summary:
       "Description area for a quick summary about this recipient, what they were awarded and what they are doing ",
-    link: "/link",
+    link: "/success-stories/marsha-doran",
   },
   {
     img: storyImage,
@@ -17,7 +17,7 @@ const stories = [
     name: "Marsha Doran",
     summary:
       "Description area for a quick summary about this recipient, what they were awarded and what they are doing ",
-    link: "/link",
+    link: "/success-stories/marsha-doran",
   },
   {
     img: storyImage,
@@ -25,7 +25,7 @@ const stories = [
     name: "Marsha Doran",
     summary:
       "Description area for a quick summary about this recipient, what they were awarded and what they are doing ",
-    link: "/link",
+    link: "/success-stories/marsha-doran",
   },
 ];
 ---
@@ -40,28 +40,28 @@ const stories = [
   >
     {
       stories.map((story, index) => (
-        <div class="max-w-[350px] bg-secondLight rounded">
+        <div class="bg-secondLight max-w-[350px] rounded">
           <div class="relative">
             <Image
-              class="absolute w-full rounded-t h-full object-cover"
+              class="absolute h-full w-full rounded-t object-cover"
               src={story.img}
               alt={`featured story #${index}`}
               width={350}
               height={250}
             />
-            <div class="bg-cover pt-40 pb-4 px-4 relative z-10">
-              <p class="text-white font-bold text-3xl">{story.name}</p>
+            <div class="relative z-10 bg-cover px-4 pt-40 pb-4">
+              <p class="text-3xl font-bold text-white">{story.name}</p>
             </div>
           </div>
 
           <div class="p-5">
-            <p class="rounded-full px-3 py-1 mt-2 text-white font-bold bg-primary inline-block">
+            <p class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white">
               {story.year}
             </p>
-            <p class="mt-3 leading-paragraph">{story.summary}</p>
+            <p class="leading-paragraph mt-3">{story.summary}</p>
             <a
               href={story.link}
-              class="block font-bold text-sm text-right mt-5 ml-auto"
+              class="mt-5 ml-auto block text-right text-sm font-bold"
             >
               Read More
             </a>
