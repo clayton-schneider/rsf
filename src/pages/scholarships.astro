@@ -4,8 +4,9 @@ import "../styles.css";
 
 import { Image } from "@astrojs/image/components";
 
-// Import Layout
 import Layout from "../layouts/Layout.astro";
+
+import MultilineText from "../components/utility/MultilineText.astro";
 
 import scholarships from "../data/scholarships/scholarships";
 ---
@@ -44,11 +45,15 @@ import scholarships from "../data/scholarships/scholarships";
                     {scholarship.title}
                   </p>
 
-                  {/* prettier-ignore */}
-                  <p class="leading-relaxed mt-5 whitespace-pre-line">{scholarship.body}</p>
+                  <MultilineText
+                    className="leading-relaxed mt-5"
+                    text={scholarship.body}
+                  />
 
-                  {/* prettier-ignore */}
-                  <p class="mt-2 italic mx-auto md:mx-0 max-w-sm whitespace-pre-line">{scholarship.quote}</p>
+                  <MultilineText
+                    className="mt-2 italic mx-auto md:mx-0 max-w-sm"
+                    text={scholarship.quote ? scholarship.quote : ""}
+                  />
                 </div>
               </div>
             ))
