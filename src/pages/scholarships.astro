@@ -1,0 +1,60 @@
+---
+// import styles MUST DO ON EVERY PAGE
+import "../styles.css";
+
+import { Image } from "@astrojs/image/components";
+
+// Import Layout
+import Layout from "../layouts/Layout.astro";
+
+import scholarships from "../data/scholarships/scholarships";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Donate | Roxbury Scholarship Foundation</title>
+  </head>
+  <Layout>
+    <main>
+      <section class="max-w-7xl mx-auto py-20 px-[5%] xl:px-0 text-textColor">
+        <h1
+          class="lg:text-7xl text-5xl font-bold text-primary text-center lg:text-left"
+        >
+          Memorial Scholarships
+        </h1>
+
+        <div class="mt-10 text-center md:text-left">
+          {
+            scholarships.map((scholarship) => (
+              <div class="flex items-center flex-col lg:items-start lg:flex-row justify-between space-y-4 lg:space-y-0 lg:space-x-4 xl:space-x-0">
+                {/* <Image
+                  src={scholarship.img}
+                  alt={scholarship.title}
+                  width={300}
+                  height={250}
+                /> */}
+                <div class="w-[300px] shrink-0 h-[250px] bg-red-300 " />
+                <div class="lg:max-w-[800px] shrink">
+                  <p class="uppercase font-bold text-3xl">
+                    {scholarship.title}
+                  </p>
+
+                  {/* prettier-ignore */}
+                  <p class="leading-relaxed mt-5 whitespace-pre-line">{scholarship.body}</p>
+
+                  {/* prettier-ignore */}
+                  <p class="mt-2 italic mx-auto md:mx-0 max-w-sm whitespace-pre-line">{scholarship.quote}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+    </main>
+  </Layout>
+</html>
