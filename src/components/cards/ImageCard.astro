@@ -1,0 +1,17 @@
+---
+export interface Props {
+  cardText: string;
+  lowerText: string;
+  classes?: string;
+}
+const { cardText, lowerText, img, classes } = Astro.props;
+---
+
+<div class={classes + " w-full max-w-[350px]"}>
+  <div class="w-full h-[350px] bg-gray-500 flex rounded pb-10">
+    <p class="text-center text-lg text-white font-bold flex-grow self-end">
+      {cardText}
+    </p>
+  </div>
+  <p class="mt-4 tracking-wide uppercase">{lowerText}</p>
+</div>

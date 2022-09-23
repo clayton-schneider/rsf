@@ -1,1 +1,27 @@
-<section class="h-[500px] bg-gray-700 my-20 max-w-7xl mx-auto"></section>
+---
+import ImageCard from "../../cards/ImageCard.astro";
+import directors from "../../../data/about/directors";
+---
+
+<section class="text-textColor text-center my-20 max-w-7xl mx-auto">
+  <div>
+    <p class="uppercase tracking-wide text-sm">This Is Us</p>
+    <h2 class="text-4xl font-bold">The Directors</h2>
+    <p class="mt-2">
+      Directors are limited to serving two terms of three years each
+    </p>
+  </div>
+
+  {/* Director Cards */}
+  <div
+    class="grid place-items-center md:grid-cols-2 md:place-items-stretch lg:grid-cols-3 mt-10 gap-y-16"
+  >
+    {
+      directors.map((director) => (
+        <div class="flex w-full justify-center">
+          <ImageCard lowerText={director.title} cardText={director.name} />
+        </div>
+      ))
+    }
+  </div>
+</section>
