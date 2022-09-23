@@ -1,0 +1,26 @@
+---
+// import styles MUST DO ON EVERY PAGE
+import "../styles.css";
+
+// Import Layout
+import Layout from "../layouts/Layout.astro";
+
+// Import Sections
+import Hero from "../components/sections/about/hero.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>About Us | Roxbury Scholarship Foundation</title>
+  </head>
+  <Layout>
+    <main>
+      <Hero />
+    </main>
+  </Layout>
+</html>
