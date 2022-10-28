@@ -12,7 +12,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    image(),
+    image({ serviceEntryPoint: "@astrojs/image/sharp" }),
     react(),
   ],
 });

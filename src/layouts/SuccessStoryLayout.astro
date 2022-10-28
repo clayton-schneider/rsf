@@ -1,16 +1,18 @@
 ---
 import type { MarkdownLayoutProps } from "astro";
+import { Image } from "@astrojs/image/components";
 
 type Props = MarkdownLayoutProps<{
   title: string;
   summary: string;
+  img: string;
 }>;
 
 const { frontmatter } = Astro.props;
 
 import "../styles.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -37,7 +39,17 @@ import Footer from "../components/Footer.astro";
           <p>{frontmatter.summary}</p>
         </div>
 
-        <div class="w-[500px] h-[350px] bg-red-200 rounded shrink-0"></div>
+        <div
+          class="w-[500px] h-[350px] bg-red-200 rounded shrink-0 overflow-hidden"
+        >
+          <Image
+            class="h-full w-full object-cover"
+            src={import(frontmatter.img)}
+            alt={frontmatter.title}
+            fit="cover"
+            position="bottom"
+          />
+        </div>
       </section>
 
       <section class="max-w-3xl mx-auto px-[5%] xl:px-0 my-20 prose">

@@ -1,12 +1,12 @@
 export default [
   {
     name: "Joan Temple",
-    title: "Secretary",
+    title: "Vice President/Secretary",
     img: "srcs",
   },
   {
     name: "Ken Allen",
-    title: "Vice President",
+    title: "Director",
     img: "srcs",
   },
   {
