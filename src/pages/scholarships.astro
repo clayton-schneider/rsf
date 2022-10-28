@@ -29,29 +29,33 @@ import scholarships from "../data/scholarships/scholarships";
           Memorial Scholarships
         </h1>
 
-        <div class="mt-10 text-center md:text-left">
+        <div class="mt-10 text-center md:text-left space-y-20">
           {
             scholarships.map((scholarship) => (
-              <div class="flex items-center flex-col lg:items-start lg:flex-row justify-between space-y-4 lg:space-y-0 lg:space-x-4 xl:space-x-0">
-                {/* <Image
-                  src={scholarship.img}
-                  alt={scholarship.title}
-                  width={300}
-                  height={250}
-                /> */}
-                <div class="w-[300px] rounded shrink-0 h-[250px] bg-red-300 " />
-                <div class="lg:max-w-[800px] shrink">
-                  <p class="uppercase font-bold text-3xl">
+              <div class="flex flex-col items-center justify-between space-y-4 lg:flex-row lg:items-start lg:space-y-0 lg:space-x-4 xl:space-x-0">
+                <div class="h-[250px] w-[300px] shrink-0 rounded bg-red-300 ">
+                  {scholarship.img && (
+                    <Image
+                      class="rounded"
+                      src={scholarship.img}
+                      alt={scholarship.title}
+                      width={300}
+                      height={250}
+                    />
+                  )}
+                </div>
+                <div class="shrink lg:max-w-[800px]">
+                  <p class="text-3xl font-bold uppercase">
                     {scholarship.title}
                   </p>
 
                   <MultilineText
-                    className="leading-relaxed mt-5"
+                    className="mt-5 leading-relaxed"
                     text={scholarship.body}
                   />
 
                   <MultilineText
-                    className="mt-2 italic mx-auto md:mx-0 max-w-sm"
+                    className="mx-auto mt-2 max-w-sm italic md:mx-0"
                     text={scholarship.quote ? scholarship.quote : ""}
                   />
                 </div>
