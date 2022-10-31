@@ -10,7 +10,6 @@ interface Props {
 
 const NavMenu = ({ links }: Props) => {
   const [isOpen, setOpen] = useState(false);
-
   const handleClick = () => {
     setOpen(!isOpen);
   };
