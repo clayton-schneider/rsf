@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface props {
   trueOption: {
@@ -13,30 +13,32 @@ interface props {
 }
 
 export default function Switch({ trueOption, falseOption, classes }: props) {
-  const [isTrue, toggleTrue] = useState(false);
+  const [isTrue, toggleTrue] = useState(true);
 
   const [selectedOption, setSelectedOption] = useState(trueOption);
 
   const handleChange = () => {
-    setSelectedOption(() => (isTrue ? trueOption : falseOption));
-    toggleTrue(!isTrue);
+    toggleTrue(() => !isTrue);
   };
+  useEffect(() => {
+    setSelectedOption(() => (isTrue ? trueOption : falseOption));
+  }, [isTrue]);
   return (
     <div className={classes + ""}>
-      <p className="font-bold text-xl">Donate By {selectedOption.title}:</p>
+      <p className="text-xl font-bold">Donate By {selectedOption.title}:</p>
       <label
         onChange={() => handleChange()}
-        className="inline-flex relative items-center cursor-pointer"
+        className="relative inline-flex cursor-pointer items-center"
       >
-        <input type="checkbox" className="sr-only peer" />
-        <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-secondary rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-primary"></div>
+        <input type="checkbox" defaultChecked={true} className="peer sr-only" />
+        <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px]  after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4  peer-focus:ring-secondary"></div>
         <span className="ml-3 text-sm font-bold">Donate Online</span>
       </label>
       {/* Insert Steps */}
       <div className="mt-4 space-y-3">
         {selectedOption.steps.map((step, index) => (
           <div className="flex" key={`step-${index}`}>
-            <p className=" bg-primary text-white font-bold text-sm min-w-[36px] w-9 h-9 rounded-full leading-[36px] text-center">
+            <p className=" h-9 w-9 min-w-[36px] rounded-full bg-primary text-center text-sm font-bold leading-[36px] text-white">
               {index + 1}
             </p>
 
@@ -48,9 +50,9 @@ export default function Switch({ trueOption, falseOption, classes }: props) {
         {/* Render Paypal*/}
         {isTrue && (
           <a
-            href="https://www.paypal.com/donate?token=krmu1Xw201xRkDdnlX78B4dW6gzZU9befyOikgWyS5WqqLQKhNX34JhDN09Eb73hxuKbt2xBy958Zjn6"
+            href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=roxburyscholarshipfoundation@gmail.com&lc=US&no_note=0&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"
             target="_blank"
-            className="mt-2 inline-block border-2 text-white text-sm hover:bg-transparent hover:border-2 hover:border-primary hover:text-primary transition-all duration-300 py-2 px-4 rounded bg-primary border-transparent uppercase tracking-widest"
+            className="mt-2 inline-block rounded border-2 border-transparent bg-primary py-2 px-4 text-sm uppercase tracking-widest text-white transition-all duration-300 hover:border-2 hover:border-primary hover:bg-transparent hover:text-primary"
           >
             Donate with PayPal
           </a>
