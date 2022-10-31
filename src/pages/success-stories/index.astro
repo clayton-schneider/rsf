@@ -4,9 +4,10 @@ import "../../styles.css";
 
 // Import Layout
 import Layout from "../../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
 
-// Import Sections
-import FeaturedStories from "../../components/sections/FeaturedStories.astro";
+// Import Data
+import successStories from "@data/success-stories/successStories";
 ---
 
 <!DOCTYPE html>
@@ -20,7 +21,46 @@ import FeaturedStories from "../../components/sections/FeaturedStories.astro";
   </head>
   <Layout>
     <main>
-      <FeaturedStories />
+      <section class="my-10 lg:my-20">
+        <div class="max-w-7xl mx-auto">
+          <h1 class="font-bold text-center lg:text-left text-5xl">
+            Our Success Stories
+          </h1>
+          <div class="mt-10 grid grid-cols-3 gap-10">
+            {
+              successStories.map((story, index) => (
+                <div class="bg-secondLight max-w-[350px] rounded">
+                  <div class="relative">
+                    <Image
+                      class="absolute h-full w-full rounded-t object-cover"
+                      src={story.img}
+                      alt={`featured story #${index}`}
+                      width={350}
+                      height={250}
+                    />
+                    <div class="relative z-10 bg-cover px-4 pt-40 pb-4">
+                      <p class="text-3xl font-bold text-white">{story.name}</p>
+                    </div>
+                  </div>
+
+                  <div class="p-5">
+                    <p class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white">
+                      {story.year}
+                    </p>
+                    <p class="leading-paragraph mt-3">{story.summary}</p>
+                    <a
+                      href={"/success-stories/" + story.slug}
+                      class="mt-5 ml-auto block text-right text-sm font-bold"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
     </main>
   </Layout>
 </html>
