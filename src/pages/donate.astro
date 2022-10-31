@@ -9,6 +9,7 @@ import Accordion from "../components/accordion/Accordion";
 import { faq } from "../data/donate/faqs";
 
 import Switch from "../components/widgets/Switch";
+import FeaturedStories from "@components/sections/FeaturedStories.astro";
 
 const mailOption = {
   title: "Mail",
@@ -96,6 +97,7 @@ const onlineOption = {
           <Accordion client:visible faqs={faq} />
         </div>
       </section>
+      <FeaturedStories />
     </main>
   </Layout>
 </html>
