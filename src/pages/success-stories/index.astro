@@ -4,10 +4,10 @@ import "../../styles.css";
 
 // Import Layout
 import Layout from "../../layouts/Layout.astro";
-import { Image } from "@astrojs/image/components";
 
 // Import Data
 import successStories from "@data/success-stories/successStories";
+import SuccessCard from "@components/cards/SuccessCard.astro";
 ---
 
 <!DOCTYPE html>
@@ -27,37 +27,7 @@ import successStories from "@data/success-stories/successStories";
             Our Success Stories
           </h1>
           <div class="mt-10 grid grid-cols-3 gap-10">
-            {
-              successStories.map((story, index) => (
-                <div class="bg-secondLight max-w-[350px] rounded">
-                  <div class="relative">
-                    <Image
-                      class="absolute h-full w-full rounded-t object-cover"
-                      src={story.img}
-                      alt={`featured story #${index}`}
-                      width={350}
-                      height={250}
-                    />
-                    <div class="relative z-10 bg-cover px-4 pt-40 pb-4">
-                      <p class="text-3xl font-bold text-white">{story.name}</p>
-                    </div>
-                  </div>
-
-                  <div class="p-5">
-                    <p class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white">
-                      {story.year}
-                    </p>
-                    <p class="leading-paragraph mt-3">{story.summary}</p>
-                    <a
-                      href={"/success-stories/" + story.slug}
-                      class="mt-5 ml-auto block text-right text-sm font-bold"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              ))
-            }
+            {successStories.map((story) => <SuccessCard data={story} />)}
           </div>
         </div>
       </section>

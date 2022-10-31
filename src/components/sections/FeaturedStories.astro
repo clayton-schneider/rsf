@@ -1,33 +1,8 @@
 ---
-import { Image } from "@astrojs/image/components";
-import storyImage from "../../imgs/home/success-story-1.jpg";
+import successStories from "@data/success-stories/successStories";
+import SuccessCard from "@components/cards/SuccessCard.astro";
 
-const stories = [
-  {
-    img: storyImage,
-    year: "2014",
-    name: "Marsha Doran",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing ",
-    link: "/success-stories/marsha-doran",
-  },
-  {
-    img: storyImage,
-    year: "2014",
-    name: "Marsha Doran",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing ",
-    link: "/success-stories/marsha-doran",
-  },
-  {
-    img: storyImage,
-    year: "2014",
-    name: "Marsha Doran",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing ",
-    link: "/success-stories/marsha-doran",
-  },
-];
+const stories = successStories.filter((story) => story.featured);
 ---
 
 <section class="max-w-7xl mx-auto my-20 px-[5%] xl:px-0 text-textColor">
@@ -38,36 +13,6 @@ const stories = [
   <div
     class="md:inline-flex flex justify-center gap-4 flex-col items-center md:flex-row mt-4 flex-wrap"
   >
-    {
-      stories.map((story, index) => (
-        <div class="bg-secondLight max-w-[350px] rounded">
-          <div class="relative">
-            <Image
-              class="absolute h-full w-full rounded-t object-cover"
-              src={story.img}
-              alt={`featured story #${index}`}
-              width={350}
-              height={250}
-            />
-            <div class="relative z-10 bg-cover px-4 pt-40 pb-4">
-              <p class="text-3xl font-bold text-white">{story.name}</p>
-            </div>
-          </div>
-
-          <div class="p-5">
-            <p class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white">
-              {story.year}
-            </p>
-            <p class="leading-paragraph mt-3">{story.summary}</p>
-            <a
-              href={story.link}
-              class="mt-5 ml-auto block text-right text-sm font-bold"
-            >
-              Read More
-            </a>
-          </div>
-        </div>
-      ))
-    }
+    {stories.map((story) => <SuccessCard data={story} />)}
   </div>
 </section>

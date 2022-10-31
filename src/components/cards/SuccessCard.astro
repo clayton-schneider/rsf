@@ -1,0 +1,46 @@
+---
+import { Image } from "@astrojs/image/components";
+interface Props {
+  data: {
+    name: string;
+    img: Promise<typeof import("*.jpg")>;
+    summary: string;
+    year: string;
+    slug;
+  };
+  className?: string;
+}
+const { className, data } = Astro.props;
+---
+
+<div
+  class={(className ? className : "") + " bg-secondLight max-w-[350px] rounded"}
+>
+  <div class="relative">
+    <Image
+      class="absolute h-full w-full rounded-t object-cover"
+      src={data.img}
+      alt={data.name}
+      width={350}
+      height={250}
+    />
+    <div class="relative z-10 bg-cover px-4 pt-40 pb-4">
+      <p class="text-3xl font-bold text-white">{data.name}</p>
+    </div>
+  </div>
+
+  <div class="p-5">
+    <p
+      class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white"
+    >
+      {data.year}
+    </p>
+    <p class="leading-paragraph mt-3">{data.summary}</p>
+    <a
+      href={"/success-stories/" + data.slug}
+      class="mt-5 ml-auto block text-right text-sm font-bold"
+    >
+      Read More
+    </a>
+  </div>
+</div>

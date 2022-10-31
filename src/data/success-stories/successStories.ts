@@ -67,6 +67,7 @@ export default [
     year: "2013",
     body: "Kirby Peters graduated from Shepaug in 2013. He went on to St. Michael’s College to study environmental science and then graduated from Cornell University Agricultural Science program. While at Cornell Kirby was awarded the NYSABA Seed Committee outstanding undergraduate award. Up until recently, Kirby worked as the greenhouse manager at a large diversified vegetable farm in Austin, Texas. He has returned to Roxbury and will be the new manager of Maple Bank Farm.",
     slug: "kirby-peters",
+    featured: true,
   },
   {
     name: "Leigh Childs",
@@ -80,6 +81,7 @@ export default [
 
     "I have to thank the Roxbury Scholarship Foundation for their support. I believe the best way to encourage tolerance and understanding of each other globally is through education. As I witness the individual talents of these amazing children, I hope I am fostering a thirst for knowledge, independent thinking, and curiosity. We can all strive to continuously learn from each other. Thank you, thank you for helping me achieve my dream of teaching abroad."`,
     slug: "leigh-childs.",
+    featured: true,
   },
   {
     name: "Marsha Doran",
@@ -102,13 +104,14 @@ export default [
 
     “The Roxbury Scholarship Foundation made it possible for me to study wildlife ecology in a top-tier program at the University of Maine, building a critical base of knowledge and experience that prepared me for real world scientific research.”`,
     slug: "rory-larson",
+    featured: true,
   },
   {
     name: "Steven Kershnar, Sari Reikes, Eric Kershnar",
     summary:
       "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
     img: import("@imgs/stories/steven-kershnar.jpg"),
-    year: "",
+    year: "1990",
     body: `Steven Kershnar earned a BA from Cornell, a JD from the University of Pennsylvania and a Ph.D. from the University of Nebraska. He is a philosophy professor and published author.
 
     Sari Reikes received her BS from UCONN and a Masters in Public Administration from Suffolk University and is the controller at a scientific company in Syracuse NY.
