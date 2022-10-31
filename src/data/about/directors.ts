@@ -1,37 +1,40 @@
+import female from "@imgs/about/female.png";
+import male from "@imgs/about/male.png";
+
 export default [
   {
     name: "Joan Temple",
     title: "Vice President/Secretary",
-    img: "srcs",
+    img: female,
   },
   {
     name: "Ken Allen",
     title: "Director",
-    img: "srcs",
+    img: male,
   },
   {
     name: "Lucia Alworth",
     title: "Director",
-    img: "srcs",
+    img: female,
   },
   {
     name: "Kimberly Pokrywka",
     title: "Director",
-    img: "srcs",
+    img: female,
   },
   {
     name: "Nina Shimer",
     title: "Director",
-    img: "srcs",
+    img: female,
   },
   {
     name: "Jan Steinman",
     title: "Director",
-    img: "srcs",
+    img: female,
   },
   {
     name: "Anthony Benivegna",
     title: "President/Treasurer",
-    img: "srcs",
+    img: male,
   },
 ];

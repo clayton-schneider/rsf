@@ -43,12 +43,20 @@ import scholarships from "../data/scholarships/scholarships";
                       height={250}
                     />
                   )}
+                  {!scholarship.img && (
+                    <Image
+                      class="rounded"
+                      src={import("@imgs/scholarships/scholarships.png")}
+                      alt={scholarship.title}
+                      width={300}
+                      height={250}
+                    />
+                  )}
                 </div>
                 <div class="shrink lg:max-w-[800px]">
                   <p class="text-3xl font-bold uppercase">
                     {scholarship.title}
                   </p>
-
                   <MultilineText
                     className="mt-5 leading-relaxed"
                     text={scholarship.body}

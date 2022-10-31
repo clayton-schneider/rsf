@@ -1,17 +1,28 @@
 ---
+import { Image } from "@astrojs/image/components";
 export interface Props {
-  cardText: string;
-  lowerText: string;
-  classes?: string;
+  data: {
+    name: string;
+    title: string;
+    img: string;
+  };
+  className?: string;
 }
-const { cardText, lowerText, img, classes } = Astro.props;
+const { data, className } = Astro.props;
 ---
 
-<div class={classes + " w-full max-w-[350px]"}>
-  <div class="w-full h-[350px] bg-gray-500 flex rounded pb-10">
-    <p class="text-center text-lg text-white font-bold flex-grow self-end">
-      {cardText}
+<div class={(className ? className : "") + " w-full max-w-[350px]"}>
+  <div class="w-full h-[350px] relative z-10 flex rounded pb-10">
+    <Image
+      class="rounded absolute h-full w-full"
+      src={data.img}
+      alt={data.name}
+    />
+    <p
+      class="text-center static z-10 text-lg text-white font-bold flex-grow self-end"
+    >
+      {data.name}
     </p>
   </div>
-  <p class="mt-4 tracking-wide uppercase">{lowerText}</p>
+  <p class="mt-4 tracking-wide uppercase">{data.title}</p>
 </div>

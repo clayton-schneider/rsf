@@ -1,6 +1,6 @@
 ---
 import ImageCard from "../../cards/ImageCard.astro";
-import directors from "../../../data/about/directors";
+import directors from "@data/about/directors";
 ---
 
 <section class="text-textColor text-center my-20 max-w-7xl mx-auto">
@@ -19,7 +19,7 @@ import directors from "../../../data/about/directors";
     {
       directors.map((director) => (
         <div class="flex w-full justify-center">
-          <ImageCard lowerText={director.title} cardText={director.name} />
+          <ImageCard data={director} />
         </div>
       ))
     }
