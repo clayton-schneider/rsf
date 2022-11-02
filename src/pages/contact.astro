@@ -51,67 +51,9 @@ import emailIcon from "../imgs/contact/email.svg";
         >
           <h3 class="text-center font-bold text-4xl">Reach Out</h3>
           <form data-static-form-name="contact">
-            <div class="flex space-x-2 mt-4">
-              <div>
-                <label for="firstName" class="block text-sm font-bold"
-                  >First Name *</label
-                >
-                <input
-                  name="firstName"
-                  type="text"
-                  id="firstName"
-                  class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
-                />
-              </div>
-
-              <div>
-                <label for="lastName" class="block text-sm font-bold"
-                  >Last Name*</label
-                >
-                <input
-                  name="lastName"
-                  type="text"
-                  id="lastName"
-                  class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
-                />
-              </div>
-            </div>
-            <div class="mt-4">
-              <label for="email" class="block text-sm font-bold"
-                >Email Address *</label
-              >
-              <input
-                name="lastName"
-                type="email"
-                id="email"
-                class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
-              />
-            </div>
-            <div class="mt-4">
-              <label for="phone" class="block text-sm font-bold">Phone *</label>
-              <input
-                name="telephone"
-                type="tel"
-                id="phone"
-                class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
-              />
-            </div>
-            <div class="mt-4">
-              <label for="message" class="block text-sm font-bold"
-                >Message *</label
-              >
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded resize-none"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="uppercase border-2 border-transparent transition duration-300 hover:font-bold hover:bg-transparent hover:border-2 hover:border-primary hover:text-primary rounded bg-primary w-full py-2 text-white tracking-widest text-sm"
-              >Send</button
-            >
+            <label>Email address <input type="email" name="email" /></label>
+            <label>Message <textarea name="message"></textarea></label>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </section>
