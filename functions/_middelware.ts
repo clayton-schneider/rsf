@@ -3,12 +3,12 @@ import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 export const onRequest: PagesFunction = mailChannelsPlugin({
   personalizations: [
     {
-      to: [{ name: "behjue", email: "behjue@gmail.com" }],
+      to: [{ name: "Clayton Schneider", email: "clayton@simply-sprout.com" }],
     },
   ],
   from: {
     name: "Test Sender",
-    email: "sender@example.com",
+    email: "noreply@simply-sprout.com",
   },
   respondWith: () => {
     return new Response(
