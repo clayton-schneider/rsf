@@ -8,7 +8,7 @@ export const onRequest: PagesFunction = mailChannelsPlugin({
   ],
   from: {
     name: "Website Form Submission",
-    email: "no-reply@simply-sprout.com",
+    email: "noreply@simply-sprout.com",
   },
   respondWith: () => {
     return new Response(
