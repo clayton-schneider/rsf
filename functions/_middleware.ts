@@ -1,31 +1,18 @@
 import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 
-// const errorHandler = async ({ next }) => {
-//   try {
-//     return await next();
-//   } catch (err) {
-//     return new Response(`${err.message}\n${err.stack}`, { status: 500 });
-//   }
-// };
-
-// export const onRequest = [errorHandler];
-
-export const onRequest = [
-  mailChannelsPlugin({
-    from: {
-      name: "Website Form Submission",
-      email: "no-reply@simply-sprout.com",
+export const onRequest: PagesFunction = mailChannelsPlugin({
+  personalizations: [
+    {
+      to: [{ name: "Clayton Schneider", email: "clayton@simply-sprout.com" }],
     },
-    personalizations: [
-      {
-        to: [{ name: "Clayton Schneider", email: "clayton@simply-sprout.com" }],
-      },
-    ],
-    respondWith: () =>
-      new Response(null, {
-        status: 302,
-        headers: { Location: "/enquiries/thank-you" },
-      }),
-    subject: "Form Website Enquiry",
-  }),
-];
+  ],
+  from: {
+    name: "Website Form Submission",
+    email: "no-reply@simply-sprout.com",
+  },
+  respondWith: () => {
+    return new Response(
+      `Thank you for submitting your enquiry. A member of the team will be in touch shortly.`
+    );
+  },
+});
