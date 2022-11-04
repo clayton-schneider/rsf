@@ -50,68 +50,55 @@ import emailIcon from "../imgs/contact/email.svg";
           class="border-2 mt-4 md:mt-0 border-secondary rounded flex-1 max-w-lg p-12"
         >
           <h3 class="text-center font-bold text-4xl">Reach Out</h3>
-          <form method="POST" action="/api/submit">
-            <div class="flex space-x-2 mt-4">
+          <form data-static-form-name="contact">
+            <div>
               <div>
-                <label for="firstName" class="block text-sm font-bold"
-                  >First Name *</label
-                >
+                <label for="first-name">First name</label>
                 <input
-                  name="firstName"
                   type="text"
-                  id="firstName"
-                  class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
+                  name="first-name"
+                  id="first-name"
+                  autocomplete="given-name"
                 />
               </div>
 
               <div>
-                <label for="lastName" class="block text-sm font-bold"
-                  >Last Name*</label
-                >
+                <label for="last-name">Last name</label>
                 <input
-                  name="lastName"
                   type="text"
-                  id="lastName"
-                  class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
+                  name="last-name"
+                  id="last-name"
+                  autocomplete="family-name"
                 />
               </div>
+
+              <div>
+                <label for="email-address">Email address</label>
+                <input
+                  type="text"
+                  name="email-address"
+                  id="email-address"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  autocomplete="phone"
+                />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
             </div>
-            <div class="mt-4">
-              <label for="email" class="block text-sm font-bold"
-                >Email Address *</label
-              >
-              <input
-                name="email"
-                type="email"
-                id="email"
-                class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
-              />
+            <div>
+              <button type="submit">Send Enquiry</button>
             </div>
-            <div class="mt-4">
-              <label for="phone" class="block text-sm font-bold">Phone *</label>
-              <input
-                name="telephone"
-                type="tel"
-                id="phone"
-                class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded"
-              />
-            </div>
-            <div class="mt-4">
-              <label for="message" class="block text-sm font-bold"
-                >Message *</label
-              >
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                class="appearance-none w-full border-2 py-1 px-2 text-textColor leading-tight focus:outline-none border-secondary rounded resize-none"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="uppercase border-2 border-transparent transition duration-300 hover:font-bold hover:bg-transparent hover:border-2 hover:border-primary hover:text-primary rounded bg-primary w-full py-2 text-white tracking-widest text-sm"
-              >Send</button
-            >
           </form>
         </div>
       </section>
