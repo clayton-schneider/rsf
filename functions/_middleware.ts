@@ -1,6 +1,6 @@
-import mailchannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
+import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 
-export const onRequest: PagesFunction = mailchannelsPlugin({
+export const onRequest: PagesFunction = mailChannelsPlugin({
   from: {
     name: "Website Form Submission",
     email: "no-reply@simply-sprout.com",
