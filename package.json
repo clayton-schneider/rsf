@@ -16,6 +16,7 @@
     "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^2.0.1",
     "@cloudflare/pages-plugin-mailchannels": "^0.1.1",
+    "@cloudflare/pages-plugin-static-forms": "^1.0.0",
     "@tailwindcss/typography": "^0.5.7",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
