@@ -1,29 +1,31 @@
-// import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
+import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
 
-const errorHandler = async ({ next }) => {
-  try {
-    return await next();
-  } catch (err) {
-    return new Response(`${err.message}\n${err.stack}`, { status: 500 });
-  }
-};
+// const errorHandler = async ({ next }) => {
+//   try {
+//     return await next();
+//   } catch (err) {
+//     return new Response(`${err.message}\n${err.stack}`, { status: 500 });
+//   }
+// };
 
-export const onRequest = [errorHandler];
+// export const onRequest = [errorHandler];
 
-// export const onRequest: PagesFunction = mailChannelsPlugin({
-//   from: {
-//     name: "Website Form Submission",
-//     email: "no-reply@simply-sprout.com",
-//   },
-//   personalizations: [
-//     {
-//       to: [{ name: "Clayton Schneider", email: "clayton@simply-sprout.com" }],
-//     },
-//   ],
-//   respondWith: () =>
-//     new Response(null, {
-//       status: 302,
-//       headers: { Location: "/enquiries/thank-you" },
-//     }),
-//   subject: "Form Website Enquiry",
-// });
+export const onRequest = [
+  mailChannelsPlugin({
+    from: {
+      name: "Website Form Submission",
+      email: "no-reply@simply-sprout.com",
+    },
+    personalizations: [
+      {
+        to: [{ name: "Clayton Schneider", email: "clayton@simply-sprout.com" }],
+      },
+    ],
+    respondWith: () =>
+      new Response(null, {
+        status: 302,
+        headers: { Location: "/enquiries/thank-you" },
+      }),
+    subject: "Form Website Enquiry",
+  }),
+];
