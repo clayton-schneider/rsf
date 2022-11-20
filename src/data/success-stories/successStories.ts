@@ -2,7 +2,7 @@ export default [
   {
     name: "Catrina Cartagena",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Catrina attended Bowdoin College and is now a practicing attorney.",
     img: import("@imgs/stories/catrina-cartagena.jpg"),
     year: "2003",
     body: "Catrina Cartagena studied government and education at Bowdoin College and earned a law degree at Cornell University. As a practicing attorney, Catrina has represented a wide variety of municipalities and non-profits.",
@@ -11,7 +11,7 @@ export default [
   {
     name: "Cesira Farrel",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Cesira attended Savanah College and is now a professor at Columbia University.",
     img: import("@imgs/stories/cesira-farrel.jpg"),
     year: "2006",
     body: "Cesira Farrell studied art and design at Savanah College and went on to earn a Ph.D. at Teachers College, Columbia for Applied Behavior Analysis.",
@@ -19,8 +19,7 @@ export default [
   },
   {
     name: "Chelsea Ale",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+    summary: "Chelsea attended Mt. Holyoke College and is now a doctor.",
     img: import("@imgs/stories/chelsea-ale.jpg"),
     year: "2000",
     body: "Dr. Chelsea Ale graduated from Shepaug in 2000 and went on to earn a degree in Psychology at Mt Holyoke College and from there her MS and Ph.D. in Clinical Psychology from West Virginia University. Currently, Dr. Ale holds a position at the Mayo clinic. She is the author of more than 20 peer-reviewed scientific articles and book chapters. She serves on the editorial board of Child Psychiatry & Human Development and Children’s Health Care.",
@@ -29,7 +28,7 @@ export default [
   {
     name: "Emily Alworth",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Emily attended Sarah Lawrence College and is now a horticulturist.",
     img: import("@imgs/stories/emily-alworth.jpg"),
     year: "2015",
     body: `Emily Alworth has the career of her dreams: She is a horticulturist at Red Butte Garden, at the University of Utah. She credits her professors at Sarah Lawrence College for her solid science education, giving her the tools she needed to grow and maintain the newly created zero-scape garden at the University.
@@ -42,7 +41,7 @@ export default [
   {
     name: "Jamie Reilly",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Jamie attended Boston University and is now a research scientist.",
     img: import("@imgs/stories/jamie-reilly.jpg"),
     year: "2009",
     body: `Jamie Reilly works as a research scientist at the United States Military Academy in West Point, NY. After graduating from Boston University with an M.Ed. in Coaching and Sport Psychology in 2015, he accepted a volunteer position at USMA coaching their swim and dive team. Once at USMA, Jamie developed an interest in Chemistry and the Life Sciences and was able to study under the guidance of LTC Luis Alvarez, Ph.D. Since beginning with the USMA CLS Dept. in 2015, Jamie’s work has expanded to include methods for diagnosing osteoarthritis, mTBI/concussions, Lyme disease, and biological engineering relevant to 3D/4D printing of ready-to-implant human organs.
@@ -52,8 +51,7 @@ export default [
   },
   {
     name: "Jon Olivieri",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+    summary: "Jon studied art abroad and is now an artist and instructor.",
     img: import("@imgs/stories/jon-olivieri.jpg"),
     year: "2002",
     body: "Jon Olivieri is an artist and instructor. He graduated from Shepaug in 2002 and while there and afterward, he did extensive field studies in Iceland, New Zealand, and the European Alps. Influenced by these field studies he constructed a striking visual image of the Earth’s structures and patterns. His work is in collections both in Europe and the United States.",
@@ -62,7 +60,7 @@ export default [
   {
     name: "Kirby Peters",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Kirby attended St. Michael's College and now manages the Maple Bank Farm.",
     img: import("@imgs/stories/kirby-peters.jpg"),
     year: "2013",
     body: "Kirby Peters graduated from Shepaug in 2013. He went on to St. Michael’s College to study environmental science and then graduated from Cornell University Agricultural Science program. While at Cornell Kirby was awarded the NYSABA Seed Committee outstanding undergraduate award. Up until recently, Kirby worked as the greenhouse manager at a large diversified vegetable farm in Austin, Texas. He has returned to Roxbury and will be the new manager of Maple Bank Farm.",
@@ -71,8 +69,7 @@ export default [
   },
   {
     name: "Leigh Childs",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+    summary: "Leigh attended Northeastern University and now teaches.",
     img: import("@imgs/stories/leigh-childs.jpg"),
     year: "2006",
     body: `Leigh Childs graduated from Northeastern University in 2011, and inspired by her love of travel, Leigh accepted a position teaching English at a Korean private school in Seoul, South Korea. There she discovered that she loved teaching young children. This motivated her to return to Connecticut to earn her Master's degree in Elementary Education. Leigh now enjoys a career working abroad within the International School system.
@@ -86,7 +83,7 @@ export default [
   {
     name: "Marsha Doran",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Marsha attended Western Connecticut University and now a Director of Visual Arts.",
     img: import("@imgs/stories/marsha-doran.jpg"),
     year: "1992",
     body: "Marsha Doran earned a BA in Painting and Illustration at West Conn in 1996 and went on to earn her MFA at Boston University. Marsha is currently the Director of Visual Arts at the Canterbury School in New Milford.",
@@ -95,7 +92,7 @@ export default [
   {
     name: "Rory Larson",
     summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+      "Rory attended the University of Maine and now the Conservation Science Manager for the Steep Rock Association.",
     img: import("@imgs/stories/rory-larson.jpg"),
     year: "2005",
     body: `Rory Larson grew up exploring the Shepaug River Valley. Here, he gained an appreciation for nature and decided to pursue a career protecting wild places and their inhabitants. Rory got his degree in wildlife ecology in a top-tier program at the University of Maine and is now the Conservation Science Manager at Steep Rock Association.
@@ -108,8 +105,7 @@ export default [
   },
   {
     name: "Steven Kershnar, Sari Reikes, Eric Kershnar",
-    summary:
-      "Description area for a quick summary about this recipient, what they were awarded and what they are doing",
+    summary: "These three attended Cornell, UCONN, Brown.",
     img: import("@imgs/stories/steven-kershnar.jpg"),
     year: "1990",
     body: `Steven Kershnar earned a BA from Cornell, a JD from the University of Pennsylvania and a Ph.D. from the University of Nebraska. He is a philosophy professor and published author.
