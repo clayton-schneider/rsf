@@ -29,13 +29,15 @@ const { className, data } = Astro.props;
     </div>
   </div>
 
-  <div class="p-5">
-    <p
-      class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white"
-    >
-      {data.year}
-    </p>
-    <p class="leading-paragraph mt-3">{data.summary}</p>
+  <div class="p-5 flex flex-col justify-between">
+    <div>
+      <p
+        class="bg-primary mt-2 inline-block rounded-full px-3 py-1 font-bold text-white"
+      >
+        {data.year}
+      </p>
+      <p class="leading-paragraph mt-3">{data.summary}</p>
+    </div>
     <a
       href={"/success-stories/" + data.slug}
       class="mt-5 ml-auto block text-right text-sm font-bold"

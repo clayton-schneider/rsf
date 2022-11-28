@@ -11,7 +11,7 @@ const stories = successStories.filter((story) => story.featured);
   </h2>
 
   <div
-    class="md:inline-flex flex justify-center gap-4 flex-col items-center md:flex-row mt-4 flex-wrap"
+    class="md:inline-flex flex justify-center gap-4 flex-col items-center md:items-stretch md:flex-row mt-4 flex-wrap"
   >
     {stories.map((story) => <SuccessCard data={story} />)}
   </div>

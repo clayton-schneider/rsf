@@ -15,6 +15,7 @@ export default [
   },
   {
     title: "Deborah Ann Chin",
+    img: import("@imgs/scholarships/deborah.jpg"),
     quote: `“Until I feared I would lose it, I never loved to read. One does not love breathing.” – Harper Lee`,
     body: "This scholarship was created in 2020 by her family and friends. The Deborah Ann Chin Memorial Scholarship is dedicated in honor of a talented and devoted educator for over 40 years. Students (undergraduate or postgraduate) chosen for this scholarship are interested in the art of teaching; especially in the advancement of the love of reading as was her calling throughout life. Alternatively, they should be interested in majors such as library science, history, English, or early childhood development as these also foster a passion for the written word and of teaching the next generation. Deborah Ann Chin’s love of literature and of children lives on through this scholarship, as does her family’s love for her.",
   },
@@ -111,6 +112,7 @@ We miss Brian every day. It will be a special joy for our family and friends to 
   },
   {
     title: "Inga-Britta Mills",
+    img: import("@imgs/scholarships/inga.jpg"),
     body: "This scholarship was established in 2018 by family and friends of Inga-Britta Mills. A native of Sweden, Inga-Britta came to America in 1954 to work for the United Nations, where she met her husband Victor. They raised their children in New Jersey, and Victor’s U.N. career also took the family to Jerusalem, Cyprus and Rome, Italy. They settled in Roxbury in 1984, and became active members of the community, supporting local organizations including the Roxbury Land Trust, the Minor Memorial Library and the Roxbury Scholarship Foundation. Inga-Britta was an accomplished artist across many genres and mediums and her work appeared in numerous shows and galleries in the United States and abroad. She was a longtime member of the Washington Art Association and a regular attendee at their weekly life drawing classes well into her 92nd year. She was also an avid opera lover and supporter of the Metropolitan Opera. Inga-Britta was a passionate advocate for social justice, and believed that everyone should have an opportunity to study what they love. The scholarship is intended especially to support students pursuing an education in the arts.",
   },
   {
