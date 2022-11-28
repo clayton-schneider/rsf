@@ -121,6 +121,7 @@ We miss Brian every day. It will be a special joy for our family and friends to 
   },
   {
     title: "Norman Shidle",
+    img: import("@imgs/scholarships/raymond.jpg"),
     body: "This scholarship was established in 1978 by the RSF Board of Directors. Mr. Shidle was the driving force behind the establishment of the foundation when Raymond Hunicke died at the age of 18. Its first President until 1978, he also served our town as Chairman of the Roxbury Zoning Commission, Chairman of the Roxbury Conservation Commission, a charter member of the Land Trust, a Director of the Hodge Memorial Library and a member of the Republican Town Committee. He authored seven books and hundreds of articles for various periodicals. Mr. Shidle was dedicated to conservation and helping students continue their education.",
   },
   {
