@@ -1,12 +1,13 @@
 import sydney from "@imgs/scholarships/sydney.jpg";
 import joseph from "@imgs/scholarships/joseph.jpg";
 import digioa from "@imgs/scholarships/digioa.png";
+import brian from "@imgs/scholarships/brian.jpg";
 
 export default [
   {
     title: "Sydney Alice Alworth",
     img: sydney,
-    body: "This scholarship was established in 2020 by Sydney’s family and friends to encourage a high school graduate to pursue post-secondary education at the institution of his or her choice, including any two- or four-year college or university, technical school, or institution offering post-graduate study. This scholarship was created to honor the life of Sydney Alice Alworth and can be awarded to any student who meets the qualifications of the Roxbury Scholarship Foundation. Sydney was a gifted artist, accomplished musician, and worldwide traveler. She loved this planet and especially loved animals. She was passionate about social and environmental issues, and ally and advocate for our LBGTQ brothers and sisters and a friend to those struggling. Sydney was truly a beautiful person inside and out. She was kind and caring, sweet and sensitive, with a generous spirit and a quirky, witty sense of humor. We are proud and grateful that this scholarship will keep Sydney’s memory alive.",
+    body: "This scholarship was established in 2020 by Sydney’s family and friends to encourage a high school graduate to pursue post-secondary education at the institution of his or her choice, including any two- or four-year college or university, technical school, or institution offering post-graduate study. This scholarship was created to honor the life of Sydney Alice Alworth and can be awarded to any student who meets the qualifications of the Roxbury Scholarship Foundation. Sydney was a gifted artist, accomplished musician, and worldwide traveler. She loved this planet and especially loved animals. She was passionate about social and environmental issues, an ally and advocate for our LBGTQ brothers and sisters and a friend to those struggling. Sydney was truly a beautiful person inside and out. She was kind and caring, sweet and sensitive, with a generous spirit and a quirky, witty sense of humor. We are proud and grateful that this scholarship will keep Sydney’s memory alive.",
   },
   {
     title: "Joseph Thomas Awlasewicz",
@@ -78,6 +79,7 @@ Additionally, Garry and Maryn are honored by their niece, Dr. Tamma Carleton, gr
   },
   {
     title: "Brian Paul Jackson",
+    img: brian,
     body: `Brian’s memorial scholarship was established in 2019 by caring friends and family. His passing on April 9, 2015 at the age of 33 from an aggressive brain tumor, reminds us all that each day is a gift.
 
 Brian was especially passionate about writing music, poems and short stories, and had great support as a student at Booth Free School, Shepaug HS, and all the way through his college education at Sarah Lawrence. The poet Mary Oliver’s words were recorded in one of his journals: “Tell me, what is it you plan to do with your one wild and precious life?”
