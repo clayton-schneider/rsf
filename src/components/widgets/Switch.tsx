@@ -54,7 +54,7 @@ export default function Switch({ trueOption, falseOption, classes }: props) {
             target="_blank"
             className="mt-2 inline-block rounded border-2 border-transparent bg-primary py-2 px-4 text-sm uppercase tracking-widest text-white transition-all duration-300 hover:border-2 hover:border-primary hover:bg-transparent hover:text-primary"
           >
-            Donate with PayPal
+            Donate Online
           </a>
         )}
       </div>

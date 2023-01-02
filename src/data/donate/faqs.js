@@ -1,12 +1,23 @@
 export const faq = [
   {
-    question: "How do I edit the pdf?",
+    question: "How can I make a contribution?",
     answer:
-      "There are text areas where you can type out your responses. Simply open the file in your browser and click into the text areas to type.",
+      "There are two ways to make a contribution: online or through mail. If you click the donate online button, a new screen will open allowing you to donate. Otherwise, you can mail a check addressed to Roxbury Scholarship Foundation to our address: Roxbury Scholarship Foundation, P.O. Box 106 Roxbury, CT 06783.",
   },
   {
-    question: "How should I submit my material?",
+    question:
+      "How do I let the foundation know that I want to contribute to a specific memorial scholarship?",
     answer:
-      "You have two options. You can either physically mail all necessary documents to our address. Or, you can scan your supplemental material and email it along with the completed applicaiton.",
+      "If you are donating online there will be an option to enter a note. Please state the memorial scholarhip you would like to donate to there. If you are donating via mail, please send a note with the check specifying the memorial scholarship. If no note is provided then your donation will go to our general fund.",
+  },
+  {
+    question:
+      "How do I let the foundation know that I want to establish a new memorial scholarship?",
+    answer: "THIS NEEDS TO BE FILLED IN WITH THE STEPS",
+  },
+  {
+    question: "How can I become involved?",
+    answer:
+      "Email us at roxburyscholarshipfoundation@gmail.com and we will send you the time and place of our next scheduled meeting. We also have opportunities to be a part of the Scholarship Awards Committee that interviews applicants as part of the decision making process.",
   },
 ];

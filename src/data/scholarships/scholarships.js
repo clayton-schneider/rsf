@@ -46,7 +46,7 @@ export default [
     body: "This scholarship was created in 1998 by her family and friends. A devoted mother and community volunteer, Christy served on the vestry of Christ Church and taught Sunday School. She was an active volunteer at Booth Free School, helping in classrooms and at PTO events. She also sold daffodils for the American Cancer Society. Christy loved to travel and to ski, and was a great cook. This scholarship is awarded to a high-school senior.",
   },
   {
-    title: "Ryamond Hunicke",
+    title: "Raymond Hunicke",
     img: import("@imgs/scholarships/raymond.jpg"),
     body: "Raymond’s death at the age of 18 was the impetus behind the establishment of the RSF. This first RSF memorial scholarship was created in 1970 by his family, friends, and classmates in memory and praise of Raymond’s scholarship, leadership, and involvement in school and in his community. Raymond graduated with honors from Washington High School and had been accepted into the engineering program at Tufts University. He was photo editor of his yearbook. Two years after his death, the class of 1971 dedicated their yearbook to Raymond. He was also active in the Pilgrim Fellowship at the Congregational Church.",
   },
