@@ -7,11 +7,17 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), image({
-    serviceEntryPoint: "@astrojs/image/sharp"
-  }), react(), mdx()]
+  site: "https://roxburysf.netlify.app",
+  integrations: [
+    tailwind({
+      config: {
+        applyBaseStyles: false,
+      },
+    }),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    react(),
+    mdx(),
+  ],
 });
