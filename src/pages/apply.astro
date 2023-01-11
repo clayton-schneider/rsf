@@ -15,8 +15,11 @@ const steps = [
   {
     icon: downIcon,
     title: "Download Application",
-    text: "Our application is updated every year. Download this year's to begin editing",
-    link: "https://google.com",
+    text: `
+    <p>Our application is updated every year. Download this year's to begin editing</p>
+    <a class="font-bold text-primary" href="${Astro.url.origin}/application-part-1.pdf" target="_blank">Application Part 1</a>
+    <a class="font-bold text-primary" href="${Astro.url.origin}/application-part-2.pdf"} target="_blank">Application Part 2</a>
+    `,
   },
   {
     icon: pencilIcon,
@@ -69,9 +72,10 @@ const steps = [
                           {step.title}
                         </p>
                       </div>
-                      <p class="mt-3 whitespace-pre-line text-center">
-                        {step.text}
-                      </p>
+                      <div
+                        set:html={step.text}
+                        class="mt-3 whitespace-pre-line text-center"
+                      />
                     </div>
                   </a>
                 );
@@ -87,9 +91,10 @@ const steps = [
                         {step.title}
                       </p>
                     </div>
-                    <p class="mt-3 whitespace-pre-line text-center">
-                      {step.text}
-                    </p>
+                    <div
+                      set:html={step.text}
+                      class="mt-3 whitespace-pre-line text-center"
+                    />
                   </div>
                 );
             })
