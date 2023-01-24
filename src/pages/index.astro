@@ -1,7 +1,4 @@
 ---
-// import styles MUST DO ON EVERY PAGE
-import "../styles.css";
-
 // Import Layout
 import Layout from "../layouts/Layout.astro";
 
@@ -12,21 +9,15 @@ import FeaturedStories from "../components/sections/FeaturedStories.astro";
 import Donate from "../components/sections/Donate.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Roxbury Scholarship Foundation</title>
-  </head>
-  <Layout>
-    <main>
-      <Hero />
-      <Impact />
-      <FeaturedStories />
-      <Donate />
-    </main>
-  </Layout>
-</html>
+<Layout
+  seo={{
+    metaTitle: "Roxbury Scholarship Foundation",
+    metaDescription:
+      "The Roxbury Scholarship Foundation (RSF) is a tax-exempt organization established in 1971 to serve the citizens of Roxbury by providing financial assistance to those pursuing higher education.",
+  }}
+>
+  <Hero />
+  <Impact />
+  <FeaturedStories />
+  <Donate />
+</Layout>

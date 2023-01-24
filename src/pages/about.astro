@@ -1,7 +1,4 @@
 ---
-// import styles MUST DO ON EVERY PAGE
-import "../styles.css";
-
 // Import Layout
 import Layout from "../layouts/Layout.astro";
 
@@ -11,57 +8,47 @@ import Directors from "../components/sections/about/Directors.astro";
 import FeaturedStories from "@components/sections/FeaturedStories.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>About Us | Roxbury Scholarship Foundation</title>
-  </head>
-  <Layout>
-    <main>
-      <AboutHero />
-      <Directors />
+<Layout
+  seo={{
+    metaTitle: "About Us | Roxbury Scholarship Foundation",
+    metaDescription:
+      "The Roxbury Scholarship Foundation (RSF) is a tax-exempt organization established in 1971 to serve the citizens of Roxbury by providing financial assistance to those pursuing higher education.",
+  }}
+>
+  <AboutHero />
+  <Directors />
 
-      <section class="bg-primary my-20">
-        <div
-          class="max-w-3xl mx-auto py-5 text-center px-[5%] xl:px-0 text-white"
-        >
-          <h2 class="font-bold text-4xl">Scholarship Awards Committee</h2>
-          <p class="mt-4 leading-relaxed">
-            Serving independently from the Directors is the Scholarship Awards
-            Committee (SAC) which consists of five townspeople who serve for up
-            to three years. This committee is informed by the Board of Directors
-            of the total amount of scholarships to be awarded. The SAC receives
-            and evaluates the detailed written applications and academic
-            records, interviews each applicant, and recommends to the Board of
-            Directors the candidates’ names and the amounts of the individual
-            scholarships.
-          </p>
-        </div>
-      </section>
+  <section class="bg-primary my-20">
+    <div class="max-w-3xl mx-auto py-5 text-center px-[5%] xl:px-0 text-white">
+      <h2 class="font-bold text-4xl">Scholarship Awards Committee</h2>
+      <p class="mt-4 leading-relaxed">
+        Serving independently from the Directors is the Scholarship Awards
+        Committee (SAC) which consists of five townspeople who serve for up to
+        three years. This committee is informed by the Board of Directors of the
+        total amount of scholarships to be awarded. The SAC receives and
+        evaluates the detailed written applications and academic records,
+        interviews each applicant, and recommends to the Board of Directors the
+        candidates’ names and the amounts of the individual scholarships.
+      </p>
+    </div>
+  </section>
 
-      <section
-        class="mx-auto max-w-7xl my-20 px-[5%] xl:px-0 text-center lg:text-left text-textColor"
+  <section
+    class="mx-auto max-w-7xl my-20 px-[5%] xl:px-0 text-center lg:text-left text-textColor"
+  >
+    <h2 class="font-bold text-4xl">Contributions</h2>
+    <div class="flex flex-col lg:flex-row justify-between mt-7 space-y-4">
+      <p class="max-w-2xl mx-auto lg:mx-0">
+        None of this assistance would be possible without the generous
+        contributions to the RSF by the citizens and friends of Roxbury. Each
+        year every household in Roxbury is asked to contribute to the RSF.
+      </p>
+      <a
+        href="/donate"
+        class="tracking-widest uppercase bg-primary border-2 border-transparent self-center py-2 px-4 rounded text-white text-sm hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300"
+        >Donate</a
       >
-        <h2 class="font-bold text-4xl">Contributions</h2>
-        <div class="flex flex-col lg:flex-row justify-between mt-7 space-y-4">
-          <p class="max-w-2xl mx-auto lg:mx-0">
-            None of this assistance would be possible without the generous
-            contributions to the RSF by the citizens and friends of Roxbury.
-            Each year every household in Roxbury is asked to contribute to the
-            RSF.
-          </p>
-          <a
-            href="/donate"
-            class="tracking-widest uppercase bg-primary border-2 border-transparent self-center py-2 px-4 rounded text-white text-sm hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300"
-            >Donate</a
-          >
-        </div>
-      </section>
-      <FeaturedStories />
-    </main>
-  </Layout>
-</html>
+    </div>
+  </section>
+  <FeaturedStories />
+</Layout>

@@ -1,10 +1,30 @@
 ---
+import "../styles.css";
+import SEO from "@components/SEO.astro";
 import Header from "@components/Header/Header.astro";
-import Footer from "../components/Footer.astro";
+import Footer from "@components/Footer.astro";
+
+export interface Props {
+  seo: {
+    metaTitle: string;
+    metaDescription: string;
+  };
+}
+
+const { seo } = Astro.props;
 ---
 
-<body>
-  <Header />
-  <slot />
-  <Footer />
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <SEO metaTitle={seo.metaTitle} metaDescription={seo.metaDescription} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
