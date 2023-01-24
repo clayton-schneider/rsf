@@ -29,18 +29,12 @@ const NavMenu = ({ links }: Props) => {
             <a href={link.link}>{link.linkText}</a>
           </li>
         ))}
-        <a
-          href="/apply"
-          className="block w-full rounded border border-white bg-primary py-2 px-4 text-center font-bold text-white xl:inline xl:w-auto"
-        >
-          Apply Now
-        </a>
-        <a
-          href="/donate"
-          className="block w-full rounded border border-primary bg-white py-2 px-4 text-center font-bold text-primary xl:inline xl:w-auto"
-        >
-          Donate
-        </a>
+        <li className="block w-full rounded border border-white bg-primary py-2 px-4 text-center font-bold text-white xl:inline xl:w-auto">
+          <a href="/apply">Apply Now</a>
+        </li>
+        <li className="block w-full rounded border border-primary bg-white py-2 px-4 text-center font-bold text-primary xl:inline xl:w-auto">
+          <a href="/donate">Donate</a>
+        </li>
       </ul>
       <Hamburger clicked={handleClick} isOpen={isOpen} />
     </div>
