@@ -21,11 +21,11 @@ export default [
     body: "This scholarship was created in 2020 by her family and friends. The Deborah Ann Chin Memorial Scholarship is dedicated in honor of a talented and devoted educator for over 40 years. Students (undergraduate or postgraduate) chosen for this scholarship are interested in the art of teaching; especially in the advancement of the love of reading as was her calling throughout life. Alternatively, they should be interested in majors such as library science, history, English, or early childhood development as these also foster a passion for the written word and of teaching the next generation. Deborah Ann Chin’s love of literature and of children lives on through this scholarship, as does her family’s love for her.",
   },
   {
-    title: "Graydon P. Roselle H. Cooper",
+    title: "Graydon P. and Roselle H. Cooper",
     body: "Established in 1989, the RSF was the sole beneficiary of the Coopers’ estate. Graydon and Roselle had no children of their own and felt a strong commitment to the youth of Roxbury. Their generous bequest nearly doubled the available funds of the Roxbury Scholarship Foundation. The Coopers retired and moved to Roxbury in 1965 and were among the first contributing members of the RSF. Graydon was a WWII veteran and had been an executive with the International Red Cross. Roselle had been an executive secretary for Mobil Corporation and served on Roxbury’s Republican Town Committee.",
   },
   {
-    title: "Jerry Digiola",
+    title: "Jerry DiGioia",
     img: digioa,
     body: "This scholarship was created in 1980 by his friend and long-time companion, Martin Erdmann. Jerry was a kind and generous man who helped many people in need but never expected or wanted recognition. He sent Christmas care packages to Roxbury servicemen in Vietnam. He served in the Navy in WWII and owned the Roxbury Garage. Visitors to the garage came as often for Jerry’s conversation and friendship as they did for gas or service. Jerry frequently went to New York to see theater and had a large collection of theater programs. He traveled extensively every year and visited his many friends.",
   },
@@ -34,7 +34,7 @@ export default [
     body: "This scholarship was established in 1997 by her family. Mildred was one of the first members of the Roxbury Scholarship Foundation, serving as the chair of the Scholarship Awards Committee and later as the President of the Board of Directors. She was the Judge of Probate in Roxbury from 1968 to 1994. A founding member of the Roxbury Land Trust, Mildred worked hard for the acquisition of the Mine Hill Preserve. She was active in the Women’s Auxiliary of the Roxbury Fire Department, the local Chairman of Planned Parenthood and Vice-Chairman of the Republican Town Committee. She taught at Booth Free School and was instrumental in the creation of the regional high school in Washington.",
   },
   {
-    title: "Reverend Charles Gerslinger",
+    title: "Reverend Charles Gerlinger",
     body: "This scholarship was established in 1976 by his family and friends. Reverend Gerlinger was a yoke minister at the Roxbury Congregational Church and at the Bridgewater Congregational Church in the late 50’s and early 60’s. A yoke minister serves two churches at one time. Reverend Gerlinger came to Connecticut from Iowa and was a wise and patient minister.",
   },
   {
@@ -131,7 +131,7 @@ We miss Brian every day. It will be a special joy for our family and friends to 
     body: "This memorial scholarship was established in 2000 by family and friends. In 1972, Mr. Hodges, a volunteer fireman, co-founded Old Roxbury Days to raise funds for a new firehouse. He served as co-chairman of this event, held annually until 1992, which was a major fundraiser for the Volunteer Fire Department as well as an important local celebration. Mr. Hodges also served this town as Chairman of the Zoning Board of Appeals. He established Boy Scout Troop 65, was Scout Master for about 25 years and began the annual Boy Scout Beef Barbecue. He taught Sunday School and served as a Deacon at the Congregational Church. Mr. Hodges was the founding President of the Roxbury Historical Society whose purpose is the preservation of old tools and machinery. This scholarship was established to support a high school senior with preference given to a student interested in studying agriculture or history.",
   },
   {
-    title: "Topland Farm",
+    title: "Toplands Farm",
     body: "The Toplands Farm Memorial Scholarship was established in 1998 in memory of A. Richard Diebold who had owned Toplands Farm since 1942. He was a businessman and a philanthropist who was sensitive to the needs of children, believing strongly that each child should have access to the best education possible. Mr. Diebold was an active member of the Christ Episcopal Church. He was also a member of the Roxbury Land Trust and an honorary member of the Roxbury Volunteer Fire Department. Toplands Farm was a great source of pride for Mr. Diebold. His passion was raising champion “home-grown” Holstein cattle. Many young people in this area had their first work experience at Toplands Farm. This scholarship was established to assist a student pursuing an education in agriculture or science.",
   },
   {

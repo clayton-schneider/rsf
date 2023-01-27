@@ -33,6 +33,11 @@ export default [
     img: female,
   },
   {
+    name: "Anne Smoliga",
+    title: "Director",
+    img: female,
+  },
+  {
     name: "Anthony Benivegna",
     title: "President/Treasurer",
     img: male,
