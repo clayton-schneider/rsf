@@ -83,7 +83,7 @@ export default [
   {
     name: "Marsha Doran",
     summary:
-      "Marsha attended Western Connecticut University and now a Director of Visual Arts.",
+      "Marsha attended Western Connecticut University and is now a Director of Visual Arts.",
     img: import("@imgs/stories/marsha-doran.jpg"),
     year: "1992",
     body: "Marsha Doran earned a BA in Painting and Illustration at West Conn in 1996 and went on to earn her MFA at Boston University. Marsha is currently the Director of Visual Arts at the Canterbury School in New Milford.",
@@ -92,7 +92,7 @@ export default [
   {
     name: "Rory Larson",
     summary:
-      "Rory attended the University of Maine and now the Conservation Science Manager for the Steep Rock Association.",
+      "Rory attended the University of Maine and is now the Conservation Science Manager for the Steep Rock Association.",
     img: import("@imgs/stories/rory-larson.jpg"),
     year: "2005",
     body: `Rory Larson grew up exploring the Shepaug River Valley. Here, he gained an appreciation for nature and decided to pursue a career protecting wild places and their inhabitants. Rory received his degree in wildlife ecology, a top-tier program, at the University of Maine. He is currently the Conservation Science Manager at Steep Rock Association.
@@ -105,7 +105,7 @@ export default [
   },
   {
     name: "Steven Kershnar, Sari Reikes, Eric Kershnar",
-    summary: "These three attended Cornell, UCONN, Brown.",
+    summary: "These three recipients attended Cornell, UCONN, and Brown.",
     img: import("@imgs/stories/steven-kershnar.jpg"),
     year: "1990",
     body: `Steven Kershnar earned a BA from Cornell, a JD from the University of Pennsylvania and a Ph.D. from the University of Nebraska. He is a philosophy professor and published author.

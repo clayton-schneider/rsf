@@ -25,7 +25,7 @@ export default function Switch({ trueOption, falseOption, classes }: props) {
   }, [isTrue]);
   return (
     <div className={classes + ""}>
-      <p className="text-xl font-bold">Donate By {selectedOption.title}:</p>
+      <p className="text-xl font-bold">Donate {selectedOption.title}:</p>
       <label
         onChange={() => handleChange()}
         className="relative inline-flex cursor-pointer items-center"
