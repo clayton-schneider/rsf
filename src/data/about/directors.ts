@@ -3,43 +3,27 @@ import male from "@imgs/about/male.png";
 
 export default [
   {
-    name: "Joan Temple",
-    title: "Vice President/Secretary",
-    img: female,
+    name: "Jon Gould",
+    title: "President",
   },
   {
-    name: "Ken Allen",
-    title: "Director",
-    img: male,
-  },
-  {
-    name: "Lucia Alworth",
-    title: "Director",
-    img: female,
-  },
-  {
-    name: "Kimberly Pokrywka",
-    title: "Director",
-    img: female,
-  },
-  {
-    name: "Nina Shimer",
-    title: "Director",
-    img: female,
+    name: "Anthony Benivegna",
+    title: "Treasurer",
   },
   {
     name: "Jan Steinman",
-    title: "Director",
-    img: female,
+    title: "Secretary",
   },
   {
     name: "Anne Smoliga",
     title: "Director",
-    img: female,
   },
   {
-    name: "Anthony Benivegna",
-    title: "President/Treasurer",
-    img: male,
+    name: "Karen Prado",
+    title: "Director",
+  },
+  {
+    name: "Sherry Seward",
+    title: "Director",
   },
 ];

@@ -12,12 +12,7 @@ const { data, className } = Astro.props;
 ---
 
 <div class={(className ? className : "") + " w-full max-w-[350px]"}>
-  <div class="w-full h-[350px] relative z-10 flex rounded pb-10">
-    <Image
-      class="rounded absolute h-full w-full"
-      src={data.img}
-      alt={data.name}
-    />
+  <div class="w-full relative z-10 flex rounded py-10 bg-green-600">
     <p
       class="text-center static z-10 text-lg text-white font-bold flex-grow self-end"
     >

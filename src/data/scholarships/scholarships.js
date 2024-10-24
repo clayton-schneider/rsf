@@ -30,6 +30,10 @@ export default [
     body: "This scholarship was created in 1980 by his friend and long-time companion, Martin Erdmann. Jerry was a kind and generous man who helped many people in need but never expected or wanted recognition. He sent Christmas care packages to Roxbury servicemen in Vietnam. He served in the Navy in WWII and owned the Roxbury Garage. Visitors to the garage came as often for Jerry’s conversation and friendship as they did for gas or service. Jerry frequently went to New York to see theater and had a large collection of theater programs. He traveled extensively every year and visited his many friends.",
   },
   {
+    title: "Jane and Tom Doyle Scholarship",
+    body: "Established in 2024 by Jane Doyle. Ms. Doyle's generous donation will allow the Roxbury Scholarhip Foundation to award meaningful support for a student who is pursuing either a vocational career, a career in agriculture with an emphasis on organic practices, a career in the visual arts or, if to any qualified student if no applicant meets one of these criteria."
+  },
+  {
     title: "Judge Mildred A. Erwin",
     body: "This scholarship was established in 1997 by her family. Mildred was one of the first members of the Roxbury Scholarship Foundation, serving as the chair of the Scholarship Awards Committee and later as the President of the Board of Directors. She was the Judge of Probate in Roxbury from 1968 to 1994. A founding member of the Roxbury Land Trust, Mildred worked hard for the acquisition of the Mine Hill Preserve. She was active in the Women’s Auxiliary of the Roxbury Fire Department, the local Chairman of Planned Parenthood and Vice-Chairman of the Republican Town Committee. She taught at Booth Free School and was instrumental in the creation of the regional high school in Washington.",
   },
