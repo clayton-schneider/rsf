@@ -31,7 +31,7 @@ export default [
   },
   {
     title: "Jane and Tom Doyle Scholarship",
-    body: "Established in 2024 by Jane Doyle. Ms. Doyle's generous donation will allow the Roxbury Scholarhip Foundation to award meaningful support for a student who is pursuing either a vocational career, a career in agriculture with an emphasis on organic practices, a career in the visual arts or, if to any qualified student if no applicant meets one of these criteria."
+    body: "Established in 2024 by Jane Doyle. Ms. Doyle's generous donation will allow the Roxbury Scholarhip Foundation to award meaningful support for a student who is pursuing either a vocational career, a career in agriculture with an emphasis on organic practices, a career in the visual arts or, to any qualified student if no applicant meets one of these criteria."
   },
   {
     title: "Judge Mildred A. Erwin",
