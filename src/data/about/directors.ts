@@ -11,7 +11,7 @@ export default [
     title: "Treasurer",
   },
   {
-    name: "Jan Steinman",
+    name: "Karen Prada",
     title: "Secretary",
   },
   {
@@ -19,7 +19,7 @@ export default [
     title: "Director",
   },
   {
-    name: "Karen Prado",
+    name: "Ethelind Colin",
     title: "Director",
   },
   {
