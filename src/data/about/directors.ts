@@ -11,7 +11,7 @@ export default [
     title: "Treasurer",
   },
   {
-    name: "Karen Prada",
+    name: "Karen Prado",
     title: "Secretary",
   },
   {
