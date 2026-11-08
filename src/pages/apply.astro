@@ -59,7 +59,7 @@ const steps = [
             return (
               <a href={step.link} target="_blank">
                 <div class="max-w-[330px]">
-                  <img class="mx-auto" src={step.icon} alt={step.title} />
+                  <img class="mx-auto" src={step.icon.src} alt={step.title} />
                   <div class="mt-9 flex flex-col items-center sm:flex-row">
                     <p class="bg-primary mx-auto inline-block h-9 w-9 rounded-full text-center text-sm font-bold leading-[36px] text-white">
                       {index + 1}
@@ -78,7 +78,7 @@ const steps = [
           else
             return (
               <div class="max-w-[330px]">
-                <img class="mx-auto" src={step.icon} alt={step.title} />
+                <img class="mx-auto" src={step.icon.src} alt={step.title} />
                 <div class="mt-9 flex flex-col items-center sm:flex-row">
                   <p class="bg-primary inline-block h-9 w-9 rounded-full text-center text-sm font-bold leading-[36px] text-white">
                     {index + 1}

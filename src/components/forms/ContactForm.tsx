@@ -93,7 +93,7 @@ const ContactForm = ({ name, message, error, fields }: Props) => {
               onChange={handleChange}
               name={field.name}
               id={field.id}
-              className="h-[150px] w-full resize-none rounded border-2 border-secondary bg-transparent p-2 text-textColor focus:outline-none"
+              className="h-[150px] w-full resize-none rounded-sm border-2 border-secondary bg-transparent p-2 text-textColor focus:outline-hidden"
             />
           ) : (
             <input
@@ -101,14 +101,14 @@ const ContactForm = ({ name, message, error, fields }: Props) => {
               type={field.fieldType}
               name={field.name}
               id={field.id}
-              className="w-full  rounded border-2 border-secondary bg-transparent px-2 py-1 focus:outline-none"
+              className="w-full  rounded-sm border-2 border-secondary bg-transparent px-2 py-1 focus:outline-hidden"
             />
           )}
         </div>
       ))}
 
       {formState === "ready" && (
-        <button className="col-span-full block w-full rounded border-2 border-transparent border-white bg-primary py-2 px-4 text-center text-sm uppercase tracking-widest text-white transition duration-300 hover:border-2 hover:border-primary hover:bg-transparent hover:font-bold hover:text-primary xl:inline xl:w-auto">
+        <button className="col-span-full block w-full rounded-sm border-2 border-transparent border-white bg-primary py-2 px-4 text-center text-sm uppercase tracking-widest text-white transition duration-300 hover:border-2 hover:border-primary hover:bg-transparent hover:font-bold hover:text-primary xl:inline xl:w-auto">
           Send Message
         </button>
       )}

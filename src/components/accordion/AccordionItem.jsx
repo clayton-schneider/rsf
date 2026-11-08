@@ -6,7 +6,7 @@ export default function AccordionItem({ faq, onToggle, active }) {
   const contentEl = useRef();
 
   return (
-    <li className={`mt-5 rounded bg-white py-8 px-5`}>
+    <li className={`mt-5 rounded-sm bg-white py-8 px-5`}>
       <button
         className={`transition-all flex w-full cursor-pointer flex-wrap items-center
         justify-between text-left text-xl font-bold  duration-300 

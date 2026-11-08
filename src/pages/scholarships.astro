@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
 
@@ -26,10 +26,10 @@ import scholarships from "../data/scholarships/scholarships";
       {
         scholarships.map((scholarship) => (
           <div class="flex flex-col items-center justify-between space-y-4 lg:flex-row lg:items-start lg:space-y-0 lg:space-x-4 xl:space-x-0">
-            <div class="h-[250px] w-[300px] shrink-0 rounded bg-red-300 ">
+            <div class="h-[250px] w-[300px] shrink-0 rounded-sm bg-red-300 ">
               {scholarship.img && (
                 <Image
-                  class="rounded"
+                  class="rounded-sm"
                   src={scholarship.img}
                   alt={scholarship.title}
                   width={300}
@@ -38,7 +38,7 @@ import scholarships from "../data/scholarships/scholarships";
               )}
               {!scholarship.img && (
                 <Image
-                  class="rounded"
+                  class="rounded-sm"
                   src={import("@imgs/scholarships/scholarships.png")}
                   alt={scholarship.title}
                   width={300}

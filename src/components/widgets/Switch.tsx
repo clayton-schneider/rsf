@@ -31,7 +31,7 @@ export default function Switch({ trueOption, falseOption, classes }: props) {
         className="relative inline-flex cursor-pointer items-center"
       >
         <input type="checkbox" defaultChecked={true} className="peer sr-only" />
-        <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px]  after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4  peer-focus:ring-secondary"></div>
+        <div className="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px]  after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-hidden peer-focus:ring-4  peer-focus:ring-secondary"></div>
         <span className="ml-3 text-sm font-bold">Donate Online</span>
       </label>
       {/* Insert Steps */}
@@ -52,7 +52,7 @@ export default function Switch({ trueOption, falseOption, classes }: props) {
           <a
             href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=roxburyscholarshipfoundation@gmail.com&lc=US&no_note=0&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"
             target="_blank"
-            className="mt-2 inline-block rounded border-2 border-transparent bg-primary py-2 px-4 text-sm uppercase tracking-widest text-white transition-all duration-300 hover:border-2 hover:border-primary hover:bg-transparent hover:text-primary"
+            className="inline-block rounded-sm border-2 border-transparent bg-primary py-2 px-4 text-sm uppercase tracking-widest text-white transition-all duration-300 hover:border-2 hover:border-primary hover:bg-transparent hover:text-primary"
           >
             Donate Online
           </a>

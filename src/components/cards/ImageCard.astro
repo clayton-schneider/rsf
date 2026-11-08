@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 export interface Props {
   data: {
     name: string;
@@ -12,9 +11,9 @@ const { data, className } = Astro.props;
 ---
 
 <div class={(className ? className : "") + " w-full max-w-[350px]"}>
-  <div class="w-full relative z-10 flex rounded py-10 bg-green-600">
+  <div class="w-full relative z-10 flex rounded-sm py-10 bg-green-600">
     <p
-      class="text-center static z-10 text-lg text-white font-bold flex-grow self-end"
+      class="text-center static z-10 text-lg text-white font-bold grow self-end"
     >
       {data.name}
     </p>

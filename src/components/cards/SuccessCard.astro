@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 interface Props {
   data: {
     name: string;
@@ -14,7 +14,7 @@ const { className, data } = Astro.props;
 ---
 
 <div
-  class={(className ? className : "") + " bg-secondLight max-w-[350px] rounded"}
+  class={(className ? className : "") + " bg-secondLight max-w-[350px] rounded-sm"}
 >
   <div class="relative">
     <Image
