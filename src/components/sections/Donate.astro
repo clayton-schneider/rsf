@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import donateImage from "../../imgs/home/2017-awards.jpg";
 ---
 
@@ -7,7 +7,7 @@ import donateImage from "../../imgs/home/2017-awards.jpg";
   class="max-w-7xl mx-auto my-20 grid-cols-1 grid px-[2.5%] lg:px-0 lg:grid-cols-6 items-center"
 >
   <div
-    class="bg-primary mt-2 lg:mt-0 text-center lg:text-left text-white p-5 rounded lg:col-start-3 lg:col-end-6 lg:row-start-1 z-10"
+    class="bg-primary mt-2 lg:mt-0 text-center lg:text-left text-white p-5 rounded-sm lg:col-start-3 lg:col-end-6 lg:row-start-1 z-10"
   >
     <h2 class="text-4xl font-bold">Make A Donation Today!</h2>
     <p class="leading-8 mt-5">
@@ -22,12 +22,12 @@ import donateImage from "../../imgs/home/2017-awards.jpg";
     </p>
     <a
       href="/donate"
-      class="mt-5 inline-block rounded border border-white px-4 py-2">Donate</a
+      class="mt-5 inline-block rounded-sm border border-white px-4 py-2">Donate</a
     >
   </div>
 
   <Image
-    class="rounded col-start-1 col-end-5 row-start-1 place-self-center"
+    class="rounded-sm col-start-1 col-end-5 row-start-1 place-self-center"
     src={donateImage}
     alt="2017 scholarship awardees"
     width={540}
