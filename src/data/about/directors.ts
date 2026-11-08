@@ -26,4 +26,8 @@ export default [
     name: "Sherry Seward",
     title: "Director",
   },
+  {
+    name: "Eric Muscatell",
+    title: "Director",
+  },
 ];

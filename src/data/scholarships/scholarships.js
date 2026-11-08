@@ -21,6 +21,17 @@ export default [
     body: "This scholarship was created in 2020 by her family and friends. The Deborah Ann Chin Memorial Scholarship is dedicated in honor of a talented and devoted educator for over 40 years. Students (undergraduate or postgraduate) chosen for this scholarship are interested in the art of teaching; especially in the advancement of the love of reading as was her calling throughout life. Alternatively, they should be interested in majors such as library science, history, English, or early childhood development as these also foster a passion for the written word and of teaching the next generation. Deborah Ann Chin’s love of literature and of children lives on through this scholarship, as does her family’s love for her.",
   },
   {
+    title: "Christ Church Roxbury",
+    img: import("@imgs/scholarships/christ-church.jpg"),
+    body: `Christ Episcopal Church is located on the historic green in Roxbury. It was founded in 1740 and is believed to be the oldest Anglican church in Litchfield County.
+
+The current Church was built in 1807. It originally faced the town green and stood between a schoolhouse and a tavern. In 1861 the Church was rotated to face south. And over the years, the schoolhouse became the Parish House and the tavern became the Rectory. When driving up South Street, you cannot miss the bright red doors that welcome all who wish to visit or worship.
+
+While this group of buildings has not changed much since the 1860s, the parish and its various spiritual leaders have evolved with the Roxbury community. Christ Church strives to be a resource to all who search for spiritual nourishment, support, and refreshment.
+
+The Christ Church Endowed Scholarship was established in 2026 with a goal of awarding an annual scholarship to a single student whose area of study fits most closely with social work, education, or ethics. We hope that this scholarship will encourage and inspire students from Roxbury to pursue careers where the focus is on helping and teaching others.`,
+  },
+  {
     title: "Graydon P. and Roselle H. Cooper",
     body: "Established in 1989, the RSF was the sole beneficiary of the Coopers’ estate. Graydon and Roselle had no children of their own and felt a strong commitment to the youth of Roxbury. Their generous bequest nearly doubled the available funds of the Roxbury Scholarship Foundation. The Coopers retired and moved to Roxbury in 1965 and were among the first contributing members of the RSF. Graydon was a WWII veteran and had been an executive with the International Red Cross. Roselle had been an executive secretary for Mobil Corporation and served on Roxbury’s Republican Town Committee.",
   },
